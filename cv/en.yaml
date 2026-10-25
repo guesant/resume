@@ -1,0 +1,405 @@
+cv:
+  name: Gabriel R. Antunes
+  headline: Software Developer
+  location: Ji-Paraná, Rondônia, Brazil
+  email: gabrielrodantunes@gmail.com
+  website: https://guesant.net/
+  social_networks:
+    - network: LinkedIn
+      username: gabrielrodantunes
+    - network: GitHub
+      username: guesant
+  sections:
+    profile:
+      - name: Software developer
+        summary: Software developer with experience across public-sector systems, freelance work, private-sector software and open-source contributions. I work across backend, frontend and integrations, with growing experience in the infrastructure and operational layers around applications.
+    experience:
+      - company: Rovema Bank
+        position: Contracted (Outsourced) Full Stack Developer
+        start_date: 2025-07
+        end_date: 2026-05
+        location: Rondônia, Brazil
+        summary: Worked on the evolution, maintenance, and production support of corporate systems, collaborating with multidisciplinary teams on fleet management, financial services, and institutional platforms.
+        highlights:
+          - Developed and improved features for fleet management, fueling, customers, billing, and transactions.
+          - Implemented business rules for access permissions, financial processing, payments, calculations, and data validation.
+          - Developed validation and reconciliation mechanisms and reports for operations, auditing, and data analysis.
+          - Investigated application and database performance bottlenecks, reducing process execution times from minutes to a few seconds.
+          - Diagnosed and resolved production incidents, contributing to stability and operational continuity.
+          - Automated application deployment and update steps, including releases, database migrations, and service management.
+          - Reduced application build and publishing time from approximately 14 to 7 minutes.
+          - Developed and maintained services and APIs for financial integrations, including instant payments and bank file processing.
+          - Contributed to system integrations, data validation, and asynchronous task execution.
+          - Contributed to security controls for financial services.
+          - Implemented institutional pages and landing pages from designs supplied by the Design team.
+      - company: '[Defensoria Pública do Estado de Rondônia](https://www.defensoria.ro.def.br/)'
+        position: Scholarship Software Developer
+        start_date: 2025-02
+        end_date: 2025-09
+        location: Rondônia, Brazil
+        summary: Continued work on the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO.
+        highlights:
+          - Developed full-stack features with JavaScript, TypeScript, Node.js, NestJS, React, and Next.js.
+          - Implemented scheduling, queue, and vacancy reports, PDF generation with Bun and jsreport, and five tutorial videos.
+          - Led the migration of TCE-RO infrastructure to Docker Swarm at DPE-RO, including environments, databases, and files.
+          - Worked with Docker and GitLab CI for deployment automation, pipelines, and monitoring.
+          - Participated in Gov.br integration and implemented an alternative local development authentication flow using OpenID Connect.
+          - Created queue-position and reservation-status indicators, location filters, and email notifications.
+          - Improved queries, receipts, and messages with service-location addresses and QR Codes.
+          - Evolved school criteria, stages, transfers, and CPF-based data recovery.
+          - Prototyped individual CPF queries and enrollment settings in Figma.
+          - Used shadcn/ui, Radix UI, SonarQube, Cypress, Git, Jira, and sprints.
+          - Participated in training, technical support, and knowledge transfer.
+      - company: '[Fugiwara Advogados](https://fugiwaraadvogados.com.br/)'
+        position: Full Stack Web Developer
+        start_date: 2025-03
+        end_date: 2025-06
+        location: Ji-Paraná, Rondônia, Brazil
+        summary: Built the law firm's institutional website end to end, from requirements analysis to deployment.
+        highlights:
+          - Gathered requirements and defined features for the institutional website.
+          - Developed a custom WordPress theme with PHP, HTML, CSS, JavaScript, and Bootstrap 5.
+          - Structured content management with Advanced Custom Fields.
+          - Implemented legal case search with Custom Post Types and WP_Query.
+          - Integrated Relevanssi and developed filters by case type.
+          - Developed case detail pages and related document downloads.
+          - Integrated and customized forms with Everest Forms.
+          - Deployed the site on Hostinger and configured Cloudflare and DNS.
+      - company: '[Tribunal de Contas do Estado de Rondônia](https://www.tce.ro.gov.br/)'
+        position: Scholarship Software Developer
+        start_date: 2024-01
+        end_date: 2025-01
+        location: Rondônia, Brazil
+        summary: Developed the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO.
+        highlights:
+          - Developed full-stack features with JavaScript, TypeScript, Node.js, NestJS, React, and Next.js.
+          - Refactored screens, forms, and selection, date, and interval components.
+          - Fixed bugs and inconsistencies identified in tests and SonarQube analysis.
+          - Contributed to queue generation and ordering based on GAEPE priority criteria.
+          - Developed the public scheduling and queue consultation portal, released in August 2024.
+          - Implemented scheduling, vacancy, and queue dashboards and email notifications.
+          - Improved calendar settings, rescheduling, holidays, and date blocking.
+          - Supported the pilot deployment in Ouro Preto do Oeste.
+          - Worked with Docker Swarm, GitLab CI, readiness probes, and rolling updates.
+          - Collaborated on Figma prototypes, Cypress tests, and user support.
+          - Worked with agile methods, sprints, Jira, and Git.
+      - company: '[Fishing Booking](https://fishingbooking.com.br/)'
+        position: Software Engineer
+        start_date: 2024-02
+        end_date: 2024-09
+        location: Ji-Paraná, Rondônia, Brazil
+        summary: Evolved, maintained, and supported a fishing tournament platform in production.
+        highlights:
+          - Developed features for creating, editing, managing, and registering individual and team tournaments.
+          - Implemented management of organizers, judges, inspectors, and anglers with role-based permissions.
+          - Improved tournament search, filtering, ranking, scoring, post review, warnings, penalties, and disqualifications.
+          - Fixed forms, validation, image and document uploads, navigation, layouts, and translations.
+          - Investigated and resolved incidents in testing and production.
+          - Updated the Expo SDK and prepared the application for App Store publication.
+          - Migrated hosting infrastructure, installed HestiaCP, and migrated from Plesk.
+          - Configured domains and DNS with Registro.br and Cloudflare.
+          - Participated in a video-compression microservice and in identifying and fixing critical security vulnerabilities.
+      - company: '[IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia](https://portal.ifro.edu.br/ji-parana)'
+        position: Research Project Member, Academic Schedule Generator
+        start_date: 2022-02
+        end_date: 2023-12
+        location: Ji-Paraná, Rondônia, Brazil
+        summary: Participated in software research and development projects at IFRO Campus Ji-Paraná.
+        highlights:
+          - Worked as a Junior Technical Developer on a technical-education monitoring dashboard project.
+          - Participated in requirements analysis, technology evaluation, interface prototyping, and technical documentation.
+          - Developed REST and GraphQL APIs with TypeScript, Node.js, NestJS, and Apollo.
+          - Modeled data with PostgreSQL and TypeORM, implementing migrations and seeds.
+          - Implemented file uploads, Meilisearch queries, and CSV and JSON exports.
+          - Developed interfaces with React, Next.js, and Apollo Client.
+          - Implemented a visual form editor with SurveyJS.
+          - Created the Copper UI library based on the Brazilian government Design System.
+          - Integrated Keycloak with OAuth 2.0 and OpenID Connect.
+          - Implemented authorization with CASL and validation with class-validator and Zod.
+          - Contributed to a modular monorepo, Docker services, and OpenAPI documentation.
+          - Deployed the backend technically on Microsoft Azure.
+    'Technical Productions':
+      - name: '[Nuxt Auth SSR authentication fix](https://github.com/sidebase/nuxt-auth/pull/360)'
+        date: '2023'
+        summary: >-
+          Investigated a difference between client-side navigation and SSR in
+          the authentication flow, where `joinPathToApiURLWN` returned a
+          promise during server rendering. The merged [PR
+          #360](https://github.com/sidebase/nuxt-auth/pull/360), submitted from
+          `guesant-fix-359`, fixed the missing `await` and closed [issue
+          #359](https://github.com/sidebase/nuxt-auth/issues/359).
+      - name: '[Unispec AST and release tooling](https://github.com/guesant/unispec)'
+        date: '2024'
+        summary: >-
+          Developed an AST and contract tooling proof of concept and improved
+          its package distribution workflow. [PR
+          #61](https://github.com/guesant/unispec/pull/61), from `guesant-next`,
+          added `ast-builder` and `ast-utils`; [PR
+          #62](https://github.com/guesant/unispec/pull/62) migrated consumers
+          away from deprecated packages; [PR
+          #93](https://github.com/guesant/unispec/pull/93), from
+          `feat/smart-release`, added conditional release automation; and [PR
+          #96](https://github.com/guesant/unispec/pull/96), from
+          `feat/include-license-changelog-readme-in-packages`, included
+          package documentation and licensing files in published artifacts.
+      - name: '[UI5 visual editor ecosystem](https://github.com/guesant/ui5-monorepo)'
+        date: '2020'
+        summary: >-
+          Built and refactored parts of a modular React and Fabric.js visual
+          editor across the `ui5-monorepo` and `ui5-plugins` repositories. Work
+          included reducing the editor bundle with [PR
+          #146](https://github.com/guesant/ui5-monorepo/pull/146), generalizing
+          object dimensions with [PR
+          #137](https://github.com/guesant/ui5-monorepo/pull/137), creating a
+          reusable actions system in [PR
+          #131](https://github.com/guesant/ui5-monorepo/pull/131), and adding
+          playground infrastructure in [PR
+          #155](https://github.com/guesant/ui5-monorepo/pull/155). The plugin
+          layer added smart rendering, canvas actions, scale editing and
+          overflow fixes through [PR #122](https://github.com/guesant/ui5-plugins/pull/122),
+          [PR #194](https://github.com/guesant/ui5-plugins/pull/194), [PR
+          #181](https://github.com/guesant/ui5-plugins/pull/181) and [PR
+          #125](https://github.com/guesant/ui5-plugins/pull/125).
+      - name: '[NativeScript Vue migration tooling](https://github.com/friendly-tnsvue)'
+        start_date: 2019
+        end_date: 2020
+        summary: >-
+          Developed a configurable migration service for Vue to NativeScript
+          Vue projects, including template transformation, DOM helpers, file
+          operations, package management and automated tests. The work is
+          preserved in seven archived repositories in the [friendly-tnsvue
+          organization](https://github.com/friendly-tnsvue), with its [profile
+          README](https://github.com/friendly-tnsvue/.github/blob/main/profile/README.md)
+          mapping the earlier migration service, plugin prototypes, v0 CLI and
+          plugin, and v1 monorepo. [PR
+          #73](https://github.com/friendly-tnsvue/friendly-tnsvue-migration-service-v0/pull/73),
+          from `poc_001-conf`, exported the generic migration process to a
+          configuration file; [PR
+          #58](https://github.com/friendly-tnsvue/friendly-tnsvue-migration-service-v0/pull/58),
+          from `feat/lib-test`, added unit tests; and [PR
+          #21](https://github.com/friendly-tnsvue/friendly-tnsvue-vue-plugin-v0/pull/21),
+          from `fix/extends-component`, fixed object components with
+          `Vue.extend`.
+      - name: '[pwa-icon-generator](https://github.com/JacobDB/pwa-icon-generator/pull/6)'
+        date: '2019'
+        summary: Merged upstream contribution that added SVG input support and a progress bar, fixed centering for non-square images, warned when default values were used and improved icon and output path handling.
+      - name: '[Selected early upstream contributions](https://github.com/guesant)'
+        start_date: 2019
+        end_date: 2020
+        summary: >-
+          Publicly verifiable upstream work from 2019 to 2020. In
+          [extenso.js](https://github.com/lusofonia/extenso.js), [PR
+          #20](https://github.com/lusofonia/extenso.js/pull/20), submitted from
+          `fix/babelwebpack` and merged into `master`, replaced the obsolete
+          Webpack loader declaration syntax, updated packages and addressed
+          [issue #17](https://github.com/lusofonia/extenso.js/issues/17). I
+          also opened [PR #24](https://github.com/lusofonia/extenso.js/pull/24)
+          from `feat/scale`, linked to [issue #19](https://github.com/lusofonia/extenso.js/issues/19), proposing an explicit numeric
+          scale option; that pull request was closed without being merged.
+          In [vue-spinners-css](https://github.com/JoshK2/vue-spinners-css),
+          [PR #3](https://github.com/JoshK2/vue-spinners-css/pull/3), submitted
+          from `feat/size-support` and merged into `master`, implemented the
+          `size` property across the spinner components in response to [issue
+          #1](https://github.com/JoshK2/vue-spinners-css/issues/1). In
+          [100-days-css](https://github.com/jasminexie/100-days-css), [PR
+          #4](https://github.com/jasminexie/100-days-css/pull/4), submitted from
+          `feat/config-info` and merged into `master`, added generation of
+          `config.json` from Git history, deterministic challenge ordering and
+          display of each challenge's author and date. In [Sergey](https://github.com/trys/sergey),
+          [PR #40](https://github.com/trys/sergey/pull/40), submitted from
+          `patch-1` and merged into `master`, fixed the unexpected closing
+          `p` tag reported in [issue #39](https://github.com/trys/sergey/issues/39).
+          A later proposal, [PR #43](https://github.com/trys/sergey/pull/43),
+          from `smart-changetag`, remains open and replaces regular-expression
+          based tag processing with CSS-selector and DOM-based operations.
+      - name: '[ava-pro](https://github.com/guesant/ava-pro)'
+        start_date: 2021
+        end_date: 2022
+        summary: >-
+          Browser extension for Moodle platforms with course search and
+          organization, automatic-login flows, chat conversations and
+          background notifications. The merged [PR
+          #16](https://github.com/guesant/ava-pro/pull/16), from
+          `0.0.2-moodle-client-js`, introduced the Moodle client package and
+          closed [issue #15](https://github.com/guesant/ava-pro/issues/15).
+      - name: '[Selected upstream issue reports](https://github.com/guesant)'
+        start_date: 2023
+        end_date: present
+        summary: >-
+          Reported and investigated reproducible issues in public projects,
+          including asynchronous Zod validation in [vorms issue
+          #37](https://github.com/Mini-ghost/vorms/issues/37), completed by the
+          project, and property spread references in Microsoft TypeSpec [issue
+          #7673](https://github.com/microsoft/typespec/issues/7673), also closed
+          as completed. Proposed broader monorepo support for
+          `dependency-changesets-action` in [issue
+          #394](https://github.com/mscharley/dependency-changesets-action/issues/394)
+          and a corresponding draft [PR
+          #395](https://github.com/mscharley/dependency-changesets-action/pull/395).
+      - name: '[IFRO Ji-Paraná Schedules](https://portal.ifro.edu.br/ji-parana)'
+        date: '2022'
+        summary: Tool that evolved from cropping schedule PDFs by coordinates to an extractor package, normalized SQLite-backed data and a React interface queryable by class and teacher.
+      - name: JipaCoding
+        summary: >-
+          Selected technical records from a public video archive covering
+          graphics, algorithms, debugging and data modeling.
+        highlights:
+          - >-
+            Graphics and Rendering: [Você precisa conhecer essa propriedade do
+            CSS! | Object-fit](https://www.youtube.com/watch?v=d6WgDVDtTlE).
+          - >-
+            Algorithms and Debugging, Campo Minado: [Campo Minado #01a: O Jogo,
+            Estrutura e Tabela](https://www.youtube.com/watch?v=ABAISDmuAzg) and
+            [Campo Minado #01b: "Você Perdeu" & Flood
+            Filling](https://www.youtube.com/watch?v=KMKsp7LO0NM).
+          - >-
+            Algorithms and Debugging, Debugging and Data Modeling: [Atributos
+            Quebrados no Modelo Conceitual do brModelo: Achando Uma Solução
+            Rápida](https://www.youtube.com/watch?v=liwW77fJeOE).
+    events:
+      - name: National Science and Technology Week
+        date: '2022'
+        location: Brasília, DF, Brazil
+        summary: Attendee.
+      - name: Git and GitHub Talk at IFRO Campus Ji-Paraná
+        date: '2023'
+        summary: Speaker at IFRO Campus Ji-Paraná on Git and GitHub.
+    projects:
+      - name: '[ava-pro](https://github.com/guesant/ava-pro)'
+        summary: >-
+          A browser extension for Moodle platforms with enrolled-course listing
+          and search, pinned courses, automatic-login flows, chat access and
+          background checks for new messages.
+        highlights:
+          - >-
+            Browser and Application Tooling: [Web Scraping com Web Extensions |
+            Estático | Introdução #01](https://www.youtube.com/watch?v=FrPqZZd_Pic&t=67s).
+      - name: '[home-lab](https://github.com/guesant/home-lab)'
+        summary: >-
+          An ongoing personal infrastructure lab where I investigate the layers
+          around an application in practice, including virtual machines,
+          segmented networks, VPNs, firewalls, containers, Kubernetes, identity
+          and observability.
+        highlights:
+          - >-
+            Infrastructure and Networking: [A Estrutura da Minha Rede e do Meu
+            Homelab (versão 2026.06.06)](https://www.youtube.com/watch?v=Ha4A6OL4T6o)
+            and [Dei uma arrumada na rede (firewall pfsense + proxmox + link oi +
+            adaptadores gigabit usb)](https://www.youtube.com/watch?v=zntagKDKKJg).
+      - name: '[infrastructure-and-cluster-notebook](https://github.com/guesant/infrastructure-and-cluster-notebook)'
+        summary: A public engineering notebook where I record infrastructure and cluster investigations through hypotheses, reproducible tests, failures and revisions instead of presenting the material as a finished tutorial.
+      - name: '[fantastic-images](https://github.com/guesant/fantastic-images)'
+        summary: >-
+          An older TypeScript and Fabric.js exploration for describing image
+          templates and rendering generated compositions on canvas. Selected
+          Graphics and Rendering records include [Gerando Imagens a partir de
+          Templates - Programando Gráficos #02](https://www.youtube.com/watch?v=YGx8mwIFC40&pp=0gcJCS8MAYcqIYzv),
+          [Gerando Vídeos com Algoritmos - Programando Gráficos
+          #03](https://www.youtube.com/watch?v=I7qFTMmREX0), and [Gerando
+          Imagens a partir de Templates (fabric.js) - Programando Gráficos
+          #02](https://www.youtube.com/watch?v=fIxxkzrTstQ).
+      - name: '[fabricjs-object-fit](https://github.com/guesant/fabricjs-object-fit)'
+        start_date: 2022
+        end_date: present
+        summary: >-
+          Published TypeScript library that provides CSS-like object-fit and
+          object-position behavior for Fabric.js, including serialization
+          support, tests and documentation. Ported the library to Fabric.js 7
+          in [PR #23](https://github.com/guesant/fabricjs-object-fit/pull/23)
+          from `feat/fabric-7`, then introduced a workspace structure in [PR
+          #33](https://github.com/guesant/fabricjs-object-fit/pull/33) and
+          standardized package names in [PR
+          #34](https://github.com/guesant/fabricjs-object-fit/pull/34), both
+          from `kebab`.
+      - name: '[parcel-resolver-pnpm](https://github.com/guesant/parcel-resolver-pnpm)'
+        summary: A 2021 proof of concept Parcel resolver that investigated the way Parcel treated pnpm's symlinked dependencies as source dependencies.
+      - name: '[friendly-tnsvue](https://github.com/friendly-tnsvue)'
+        summary: >-
+          A 2019 proof of concept for automating parts of the migration from
+          Vue projects to NativeScript-Vue through a CLI, migration service and
+          reusable migration models. The history is now preserved across seven
+          archived repositories in the [friendly-tnsvue organization](https://github.com/friendly-tnsvue);
+          the separate [nsvue-colors](https://github.com/guesant/nsvue-colors)
+          repository remains under `guesant`.
+        highlights:
+          - >-
+            Browser and Application Tooling: [Migrando uma SPA Vue.js para
+            Nativescript | Vue.JS para {N} #01](https://www.youtube.com/watch?v=MzAdHjVK8i0).
+      - name: '[gir-js](https://github.com/guesant/gir-js)'
+        summary: An unfinished investigation into using GObject introspection metadata to expose native libraries to JavaScript runtimes through FFI and generate TypeScript-facing information from typelib data.
+      - name: Unispec
+        summary: An archived research and proof of concept around declaring contracts once and deriving tooling for ecosystems such as NestJS, GraphQL, OpenAPI, Swagger and QuickType.
+      - name: Ya Time Marker
+        summary: A 2021 Ionic and React PWA for marking and searching time records while keeping the user's history on the device, with import, export and deletion under the user's control.
+      - name: '[outro-bun](https://github.com/guesant/outro-bun)'
+        summary: >-
+          A one-off Bun and TypeScript tool that turned a graduation-song
+          spreadsheet export into an automated download and media-processing
+          workflow using yt-dlp and FFmpeg.
+        highlights:
+          - >-
+            Automation and Tooling: [COMO EU FIZ PARA BAIXAR VÁRIOS ÁUDIOS DE
+            UMA PLANILHA com o BUN | yt-dlp; ffmpeg; bun
+            js;](https://www.youtube.com/watch?v=l6ATDfyfCps&t=999s).
+      - name: '[nota-filler](https://github.com/guesant/nota-filler)'
+        summary: An old demonstrator for programmatically filling a school-grade sheet or template, published with a web demo and a JipaCoding walkthrough.
+      - name: '[alset-aloc](https://github.com/guesant/alset-aloc)'
+        summary: A C# and WPF rental-management desktop system built as a team project for completion of IFRO's technical program in informatics.
+    cases:
+      - name: '[Central de Vagas em Creches](https://mpc.ro.gov.br/2025/05/26/atuacao-ativa-do-mpc-ro-resulta-em-100-de-adesao-dos-municipios-a-central-de-vagas-em-creche/)'
+        summary: I worked as a scholarship developer on the team behind a public-sector platform for childcare applications, service workflows and waiting-list management. The software was registered with INPI under process BR 51 2025 006383-0; the [official INPI database](https://busca.inpi.gov.br/pePI/jsp/programas/ProgramaSearchBasico.jsp) provides the public lookup for the registration. It became one of my first sustained experiences with software that reached production and continued demanding support after deployment.
+      - name: IFRO Ji-Paraná Schedules
+        summary: I built a tool that turned the campus's weekly schedule PDFs into information students could browse by class and teacher. What began as a cropping shortcut later became structured data, a separate interface and eventually a bridge into the harder problem of generating and managing academic schedules.
+      - name: SIPEC
+        summary: I worked full stack on an institutional surveys platform where users could create projects, assemble forms and collect responses under different access modes.
+      - name: 'SISGHA / Ladesa: Academic Management and Scheduling'
+        summary: I came to SISGHA after building a personal viewer for already-published schedules and realizing that displaying a timetable was only the end of a much larger scheduling problem. My contributions crossed early academic CRUD and UI, generator rules, infrastructure and cluster maintenance, and later application, domain and platform work.
+      - name: '[Fishing Booking](https://fishingbooking.com.br/)'
+        summary: I joined an existing PHP product during a team transition and helped keep the system moving while ownership was changing.
+      - name: '[Fugiwara Advogados](https://fugiwaraadvogados.com.br/)'
+        summary: I implemented the first version of the firm's institutional website as a custom WordPress theme, with structured content managed through Secure Custom Fields.
+      - name: '[ava-pro: Moodle Inside a Browser Extension](https://github.com/guesant/ava-pro)'
+        summary: AVA Pro grew from my web-scraping experiments into a browser extension that interacted with Moodle as an authenticated application, including courses, search and pinning, login flows, chats and background checks for new messages.
+      - name: 'Scrap Rain: Multi-Source Product Catalog Scraping'
+        summary: I built Scrap Rain for a freelance job that collected product catalogs from four furniture websites and turned different page structures into data that could be persisted and updated incrementally.
+    experiments:
+      - name: '[WebExtension RPC Between Page and Content Script](https://github.com/guesant/webext-rpc-contentscript-v3-parcel/pull/3)'
+        date: '2023'
+        summary: >-
+          Collaborative Manifest V3 proof of concept for exposing
+          request-and-response communication between page code and a browser
+          extension content script through `window.postMessage`. The merged
+          [PR #3](https://github.com/guesant/webext-rpc-contentscript-v3-parcel/pull/3),
+          from `change-usage-api`, redesigned the message API and closed [issue
+          #1](https://github.com/guesant/webext-rpc-contentscript-v3-parcel/issues/1).
+      - name: Clock-Hand Angles in C#
+        date: '2022'
+        summary: A small C# algorithm exercise for calculating both arcs formed by the hands of a 12-hour clock while accounting for continuous hour-hand movement.
+    education:
+      - institution: IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia
+        area: Information Technology
+        degree: Integrated Technical High School
+        start_date: 2021
+        end_date: 2023
+        location: Ji-Paraná, Rondônia, Brazil
+    skills:
+      - label: Technologies
+        details: PHP, Symfony, JavaScript, TypeScript, Node.js, NestJS, React, Next.js, React Native, Expo, PostgreSQL, Docker, Docker Swarm, GitLab CI, WordPress, Figma, Cypress, SonarQube, Keycloak, GraphQL, Azure
+    certifications:
+      - bullet: Bootstrap 4
+      - bullet: Front/Back End & UX/UI Design
+      - bullet: JavaScript and jQuery
+      - bullet: Complete JavaScript ES6
+      - bullet: Complete Web Design
+    languages:
+      - bullet: English, Professional Working
+design:
+  theme: sb2nov
+locale:
+  language: english
+settings:
+  current_date: 2026-10-24
+  render_command:
+    output_folder: ../build/en
+    dont_generate_png: true
+

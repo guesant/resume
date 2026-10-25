@@ -1,0 +1,88 @@
+videos:
+  - id: home-lab-network-structure
+    title: 'A Estrutura da Minha Rede e do Meu Homelab (versão 2026.06.06)'
+    url: https://www.youtube.com/watch?v=Ha4A6OL4T6o
+    owner_type: project
+    owner_id: home-lab
+    category: infrastructure-and-networking
+    evidence_type: project-demonstration
+  - id: home-lab-network-cleanup
+    title: 'Dei uma arrumada na rede (firewall pfsense + proxmox + link oi + adaptadores gigabit usb)'
+    url: https://www.youtube.com/watch?v=zntagKDKKJg
+    owner_type: project
+    owner_id: home-lab
+    category: infrastructure-and-networking
+    evidence_type: project-demonstration
+  - id: outro-bun-spreadsheet-audio-download
+    title: 'COMO EU FIZ PARA BAIXAR VÁRIOS ÁUDIOS DE UMA PLANILHA com o BUN | yt-dlp; ffmpeg; bun js;'
+    url: https://www.youtube.com/watch?v=l6ATDfyfCps&t=999s
+    owner_type: project
+    owner_id: outro-bun
+    category: automation-and-tooling
+    evidence_type: project-demonstration
+  - id: fantastic-images-template-rendering
+    title: 'Gerando Imagens a partir de Templates - Programando Gráficos #02'
+    url: https://www.youtube.com/watch?v=YGx8mwIFC40&pp=0gcJCS8MAYcqIYzv
+    owner_type: project
+    owner_id: fantastic-images
+    category: graphics-and-rendering
+    evidence_type: project-demonstration
+  - id: fantastic-images-algorithmic-video
+    title: 'Gerando Vídeos com Algoritmos - Programando Gráficos #03'
+    url: https://www.youtube.com/watch?v=I7qFTMmREX0
+    owner_type: project
+    owner_id: fantastic-images
+    category: graphics-and-rendering
+    evidence_type: project-demonstration
+  - id: fantastic-images-fabricjs-templates
+    title: 'Gerando Imagens a partir de Templates (fabric.js) - Programando Gráficos #02'
+    url: https://www.youtube.com/watch?v=fIxxkzrTstQ
+    owner_type: project
+    owner_id: fantastic-images
+    category: graphics-and-rendering
+    evidence_type: project-demonstration
+  - id: ava-pro-web-scraping
+    title: 'Web Scraping com Web Extensions | Estático | Introdução #01'
+    url: https://www.youtube.com/watch?v=FrPqZZd_Pic&t=67s
+    owner_type: project
+    owner_id: ava-pro
+    category: browser-and-application-tooling
+    evidence_type: project-demonstration
+  - id: friendly-tnsvue-migration
+    title: 'Migrando uma SPA Vue.js para Nativescript | Vue.JS para {N} #01'
+    url: https://www.youtube.com/watch?v=MzAdHjVK8i0
+    owner_type: project
+    owner_id: friendly-tnsvue
+    category: browser-and-application-tooling
+    evidence_type: project-demonstration
+  - id: jipacoding-object-fit
+    title: 'Você precisa conhecer essa propriedade do CSS! | Object-fit'
+    url: https://www.youtube.com/watch?v=d6WgDVDtTlE
+    owner_type: technical-production
+    owner_id: JipaCoding
+    category: graphics-and-rendering
+    evidence_type: technical-production
+  - id: jipacoding-minesweeper-structure
+    title: 'Campo Minado #01a: O Jogo, Estrutura e Tabela'
+    url: https://www.youtube.com/watch?v=ABAISDmuAzg
+    owner_type: technical-production
+    owner_id: JipaCoding
+    category: algorithms-and-debugging
+    subcategory: Campo Minado
+    evidence_type: technical-production
+  - id: jipacoding-minesweeper-flood-fill
+    title: 'Campo Minado #01b: "Você Perdeu" & Flood Filling'
+    url: https://www.youtube.com/watch?v=KMKsp7LO0NM
+    owner_type: technical-production
+    owner_id: JipaCoding
+    category: algorithms-and-debugging
+    subcategory: Campo Minado
+    evidence_type: technical-production
+  - id: jipacoding-brmodelo-debugging
+    title: 'Atributos Quebrados no Modelo Conceitual do brModelo: Achando Uma Solução Rápida'
+    url: https://www.youtube.com/watch?v=liwW77fJeOE
+    owner_type: technical-production
+    owner_id: JipaCoding
+    category: algorithms-and-debugging
+    subcategory: Debugging and Data Modeling
+    evidence_type: technical-production
