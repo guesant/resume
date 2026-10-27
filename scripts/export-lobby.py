@@ -3,6 +3,7 @@ import html
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from ruamel.yaml import YAML
 
@@ -20,6 +21,17 @@ def plain(value):
     return re.sub(r"[*`]+", "", text).strip()
 
 
+def public_content_url(value):
+    match = re.fullmatch(r"\[[^\]]+\]\((https://[^\s)]+)\)", str(value or "").strip())
+    if not match:
+        return None
+    url = match.group(1)
+    parsed = urlsplit(url)
+    if parsed.hostname not in {"github.com", "gitlab.com", "www.youtube.com", "youtube.com", "youtu.be"} or parsed.username or parsed.password or parsed.port not in {None, 443}:
+        return None
+    return url
+
+
 def export_document(document, locale):
     items = []
     for section, kind in SECTIONS[locale].items():
@@ -33,6 +45,10 @@ def export_document(document, locale):
             identifier = kind + "-" + hashlib.sha256(str(primary).encode()).hexdigest()[:16]
             summary = plain(entry.get("summary") or entry.get("details") or entry.get("area"))
             metadata = {key: plain(entry[key]) for key in ("position", "degree", "area", "start_date", "end_date", "date") if entry.get(key) is not None}
+            if kind == "project":
+                content_url = public_content_url(primary)
+                if content_url:
+                    metadata["content_url"] = content_url
             items.append({"id": identifier, "language": locale.lower(), "type": kind, "title": title, "summary": summary, "url": f"https://curriculum.guesant.net/{locale}/#{identifier}", "tags": [], "metadata": metadata})
     return items
 

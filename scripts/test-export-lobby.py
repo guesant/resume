@@ -25,6 +25,20 @@ class ExportTests(unittest.TestCase):
         entries = [{"name": "Hidden", **flag} for flag in ({"private": True}, {"public": False}, {"enabled": False}, {"draft": True})]
         self.assertEqual(module.export_document({"cv": {"sections": {"projects": entries}}}, "en"), [])
 
+    def test_projects_export_the_declared_public_platform_url(self):
+        name = "[ava-pro](https://github.com/guesant/ava-pro)"
+        document = {"cv": {"sections": {"projects": [{"name": name, "summary": "Public summary"}]}}}
+        item = module.export_document(document, "en")[0]
+        self.assertEqual(item["metadata"]["content_url"], "https://github.com/guesant/ava-pro")
+        self.assertTrue(item["url"].startswith("https://curriculum.guesant.net/en/#project-"))
+        self.assertEqual(item["title"], "ava-pro")
+
+    def test_content_urls_are_not_inferred_or_exported_from_other_fields(self):
+        for name in ("ava-pro", "[Project](https://github.com.evil.test/repo)", "[Project](https://user:secret@github.com/guesant/repo)", "[Project](javascript:alert(1))"):
+            self.assertIsNone(module.public_content_url(name))
+        document = {"cv": {"sections": {"cases": [{"name": "[Case](https://github.com/guesant/repo)", "summary": "Public summary"}]}}}
+        self.assertNotIn("content_url", module.export_document(document, "en")[0]["metadata"])
+
     def test_canonical_anchor_exists_and_is_idempotent(self):
         item = module.export_document({"cv": {"sections": {"skills": [{"label": "Tools", "details": "A, B"}]}}}, "en")[0]
         with tempfile.TemporaryDirectory() as directory:

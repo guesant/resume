@@ -119,7 +119,9 @@
       "summary": "Extensão de navegador para plataformas Moodle com listagem e busca de disciplinas, cursos fixados, fluxos de login automático, acesso a chats e verificações em segundo plano por novas mensagens.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-e3d710e7f3bfdba0",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/ava-pro"
+      }
     },
     {
       "id": "project-74a9cde0d07a6375",
@@ -129,7 +131,9 @@
       "summary": "Laboratório pessoal de infraestrutura em andamento onde investigo, na prática, as camadas ao redor de uma aplicação, incluindo máquinas virtuais, redes segmentadas, VPNs, firewalls, containers, Kubernetes, identidade e observabilidade.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-74a9cde0d07a6375",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/home-lab"
+      }
     },
     {
       "id": "project-f4290752cdbb37bd",
@@ -139,7 +143,9 @@
       "summary": "Caderno público de engenharia onde registro investigações sobre infraestrutura e clusters por meio de hipóteses, testes reproduzíveis, falhas e revisões, em vez de apresentar o material como um tutorial acabado.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-f4290752cdbb37bd",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/infrastructure-and-cluster-notebook"
+      }
     },
     {
       "id": "project-2248ebf81fae5861",
@@ -149,7 +155,9 @@
       "summary": "Exploração antiga em TypeScript e Fabric.js para descrever templates de imagem e renderizar composições geradas em canvas. Entre os registros de Gráficos e Renderização estão Gerando Imagens a partir de Templates - Programando Gráficos #02, Gerando Vídeos com Algoritmos - Programando Gráficos #03 e Gerando Imagens a partir de Templates (fabric.js) - Programando Gráficos #02.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-2248ebf81fae5861",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/fantastic-images"
+      }
     },
     {
       "id": "project-7a5dd53237228a9c",
@@ -161,7 +169,8 @@
       "tags": [],
       "metadata": {
         "start_date": "2022",
-        "end_date": "present"
+        "end_date": "present",
+        "content_url": "https://github.com/guesant/fabricjs-object-fit"
       }
     },
     {
@@ -172,7 +181,9 @@
       "summary": "Proof of concept de 2021 para investigar a forma como o Parcel tratava dependências instaladas via symlink pelo pnpm como dependências de código-fonte.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-f8eb0907e013bd52",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/parcel-resolver-pnpm"
+      }
     },
     {
       "id": "project-d59c2e5ae2b286b7",
@@ -182,7 +193,9 @@
       "summary": "Proof of concept de 2019 para automatizar partes da migração de projetos Vue para NativeScript-Vue por meio de uma CLI, um serviço de migração e modelos reutilizáveis. O histórico está preservado em sete repositórios arquivados na organização friendly-tnsvue; o repositório separado nsvue-colors continua em guesant.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-d59c2e5ae2b286b7",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/friendly-tnsvue"
+      }
     },
     {
       "id": "project-6eca0893a4b1de7f",
@@ -192,7 +205,9 @@
       "summary": "Investigação inacabada sobre o uso dos metadados do GObject introspection para expor bibliotecas nativas a runtimes JavaScript por FFI e derivar informações voltadas a TypeScript a partir de typelibs.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-6eca0893a4b1de7f",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/gir-js"
+      }
     },
     {
       "id": "project-e52479ae69994603",
@@ -222,7 +237,9 @@
       "summary": "Ferramenta pontual em Bun e TypeScript que transformava a exportação da planilha de músicas da colação de grau em um fluxo automatizado de download e processamento de mídia com yt-dlp e FFmpeg.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-1d7ae8174a70062c",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/outro-bun"
+      }
     },
     {
       "id": "project-092237ecf351c55d",
@@ -232,7 +249,9 @@
       "summary": "Demonstrador antigo para preencher programaticamente uma folha ou template de notas escolares, publicado com uma demo web e um vídeo no JipaCoding.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-092237ecf351c55d",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/nota-filler"
+      }
     },
     {
       "id": "project-c139d9f99f54754a",
@@ -242,7 +261,9 @@
       "summary": "Sistema desktop de gestão de aluguéis em C# e WPF desenvolvido em equipe como requisito para conclusão do curso técnico em informática do IFRO.",
       "url": "https://curriculum.guesant.net/pt-BR/#project-c139d9f99f54754a",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/alset-aloc"
+      }
     },
     {
       "id": "case-9b4f6e4f80580492",
@@ -441,7 +462,9 @@
       "summary": "A browser extension for Moodle platforms with enrolled-course listing and search, pinned courses, automatic-login flows, chat access and background checks for new messages.",
       "url": "https://curriculum.guesant.net/en/#project-e3d710e7f3bfdba0",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/ava-pro"
+      }
     },
     {
       "id": "project-74a9cde0d07a6375",
@@ -451,7 +474,9 @@
       "summary": "An ongoing personal infrastructure lab where I investigate the layers around an application in practice, including virtual machines, segmented networks, VPNs, firewalls, containers, Kubernetes, identity and observability.",
       "url": "https://curriculum.guesant.net/en/#project-74a9cde0d07a6375",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/home-lab"
+      }
     },
     {
       "id": "project-f4290752cdbb37bd",
@@ -461,7 +486,9 @@
       "summary": "A public engineering notebook where I record infrastructure and cluster investigations through hypotheses, reproducible tests, failures and revisions instead of presenting the material as a finished tutorial.",
       "url": "https://curriculum.guesant.net/en/#project-f4290752cdbb37bd",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/infrastructure-and-cluster-notebook"
+      }
     },
     {
       "id": "project-2248ebf81fae5861",
@@ -471,7 +498,9 @@
       "summary": "An older TypeScript and Fabric.js exploration for describing image templates and rendering generated compositions on canvas. Selected Graphics and Rendering records include Gerando Imagens a partir de Templates - Programando Gráficos #02, Gerando Vídeos com Algoritmos - Programando Gráficos #03, and Gerando Imagens a partir de Templates (fabric.js) - Programando Gráficos #02.",
       "url": "https://curriculum.guesant.net/en/#project-2248ebf81fae5861",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/fantastic-images"
+      }
     },
     {
       "id": "project-7a5dd53237228a9c",
@@ -483,7 +512,8 @@
       "tags": [],
       "metadata": {
         "start_date": "2022",
-        "end_date": "present"
+        "end_date": "present",
+        "content_url": "https://github.com/guesant/fabricjs-object-fit"
       }
     },
     {
@@ -494,7 +524,9 @@
       "summary": "A 2021 proof of concept Parcel resolver that investigated the way Parcel treated pnpm's symlinked dependencies as source dependencies.",
       "url": "https://curriculum.guesant.net/en/#project-f8eb0907e013bd52",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/parcel-resolver-pnpm"
+      }
     },
     {
       "id": "project-d59c2e5ae2b286b7",
@@ -504,7 +536,9 @@
       "summary": "A 2019 proof of concept for automating parts of the migration from Vue projects to NativeScript-Vue through a CLI, migration service and reusable migration models. The history is now preserved across seven archived repositories in the friendly-tnsvue organization; the separate nsvue-colors repository remains under guesant.",
       "url": "https://curriculum.guesant.net/en/#project-d59c2e5ae2b286b7",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/friendly-tnsvue"
+      }
     },
     {
       "id": "project-6eca0893a4b1de7f",
@@ -514,7 +548,9 @@
       "summary": "An unfinished investigation into using GObject introspection metadata to expose native libraries to JavaScript runtimes through FFI and generate TypeScript-facing information from typelib data.",
       "url": "https://curriculum.guesant.net/en/#project-6eca0893a4b1de7f",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/gir-js"
+      }
     },
     {
       "id": "project-e52479ae69994603",
@@ -544,7 +580,9 @@
       "summary": "A one-off Bun and TypeScript tool that turned a graduation-song spreadsheet export into an automated download and media-processing workflow using yt-dlp and FFmpeg.",
       "url": "https://curriculum.guesant.net/en/#project-1d7ae8174a70062c",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/outro-bun"
+      }
     },
     {
       "id": "project-092237ecf351c55d",
@@ -554,7 +592,9 @@
       "summary": "An old demonstrator for programmatically filling a school-grade sheet or template, published with a web demo and a JipaCoding walkthrough.",
       "url": "https://curriculum.guesant.net/en/#project-092237ecf351c55d",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/nota-filler"
+      }
     },
     {
       "id": "project-c139d9f99f54754a",
@@ -564,7 +604,9 @@
       "summary": "A C# and WPF rental-management desktop system built as a team project for completion of IFRO's technical program in informatics.",
       "url": "https://curriculum.guesant.net/en/#project-c139d9f99f54754a",
       "tags": [],
-      "metadata": {}
+      "metadata": {
+        "content_url": "https://github.com/guesant/alset-aloc"
+      }
     },
     {
       "id": "case-9b4f6e4f80580492",
