@@ -1,0 +1,650 @@
+{
+  "version": 1,
+  "source": "resume",
+  "items": [
+    {
+      "id": "experience-536e6e9ff24818f0",
+      "language": "pt-br",
+      "type": "experience",
+      "title": "Rovema Bank",
+      "summary": "Evolução, manutenção e sustentação de sistemas corporativos em produção, colaborando com equipes multidisciplinares em soluções de gestão de frota, serviços financeiros e plataformas institucionais.",
+      "url": "https://curriculum.guesant.net/pt-BR/#experience-536e6e9ff24818f0",
+      "tags": [],
+      "metadata": {
+        "position": "Desenvolvedor Full Stack Contratado (Terceirizado)",
+        "start_date": "2025-07",
+        "end_date": "2026-05"
+      }
+    },
+    {
+      "id": "experience-a2c26bf1a182d9f9",
+      "language": "pt-br",
+      "type": "experience",
+      "title": "Defensoria Pública do Estado de Rondônia",
+      "summary": "Continuidade da atuação no projeto Central de Vagas, coordenado pelo IFRO em parceria com TCE-RO e DPE-RO.",
+      "url": "https://curriculum.guesant.net/pt-BR/#experience-a2c26bf1a182d9f9",
+      "tags": [],
+      "metadata": {
+        "position": "Bolsista Desenvolvedor de Software",
+        "start_date": "2025-02",
+        "end_date": "2025-09"
+      }
+    },
+    {
+      "id": "experience-6179cedffdc79401",
+      "language": "pt-br",
+      "type": "experience",
+      "title": "Fugiwara Advogados",
+      "summary": "Desenvolvimento ponta a ponta do site institucional do escritório, do levantamento de requisitos à implantação.",
+      "url": "https://curriculum.guesant.net/pt-BR/#experience-6179cedffdc79401",
+      "tags": [],
+      "metadata": {
+        "position": "Desenvolvedor Web Full Stack",
+        "start_date": "2025-03",
+        "end_date": "2025-06"
+      }
+    },
+    {
+      "id": "experience-3188e49ac422e562",
+      "language": "pt-br",
+      "type": "experience",
+      "title": "Tribunal de Contas do Estado de Rondônia",
+      "summary": "Desenvolvimento do projeto Central de Vagas, coordenado pelo IFRO em parceria com TCE-RO e DPE-RO.",
+      "url": "https://curriculum.guesant.net/pt-BR/#experience-3188e49ac422e562",
+      "tags": [],
+      "metadata": {
+        "position": "Bolsista Desenvolvedor de Software",
+        "start_date": "2024-01",
+        "end_date": "2025-01"
+      }
+    },
+    {
+      "id": "experience-e1b7aac7d2bffa48",
+      "language": "pt-br",
+      "type": "experience",
+      "title": "Fishing Booking",
+      "summary": "Evolução, manutenção e sustentação em produção de uma plataforma de torneios de pesca.",
+      "url": "https://curriculum.guesant.net/pt-BR/#experience-e1b7aac7d2bffa48",
+      "tags": [],
+      "metadata": {
+        "position": "Engenheiro de Software",
+        "start_date": "2024-02",
+        "end_date": "2024-09"
+      }
+    },
+    {
+      "id": "experience-7946c78ef554e847",
+      "language": "pt-br",
+      "type": "experience",
+      "title": "IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia",
+      "summary": "Participação em projetos de pesquisa e desenvolvimento de software no Campus Ji-Paraná.",
+      "url": "https://curriculum.guesant.net/pt-BR/#experience-7946c78ef554e847",
+      "tags": [],
+      "metadata": {
+        "position": "Integrante do Projeto de Pesquisa Sistema Gerador de Horário Acadêmico",
+        "start_date": "2022-02",
+        "end_date": "2023-12"
+      }
+    },
+    {
+      "id": "education-d7ffe5ff0c3ef795",
+      "language": "pt-br",
+      "type": "education",
+      "title": "IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia",
+      "summary": "Informática",
+      "url": "https://curriculum.guesant.net/pt-BR/#education-d7ffe5ff0c3ef795",
+      "tags": [],
+      "metadata": {
+        "degree": "Curso Técnico Integrado ao Ensino Médio",
+        "area": "Informática",
+        "start_date": "2021",
+        "end_date": "2023"
+      }
+    },
+    {
+      "id": "skill-7e415e542701db02",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Tecnologias",
+      "summary": "PHP, Symfony, JavaScript, TypeScript, Node.js, NestJS, React, Next.js, React Native, Expo, PostgreSQL, Docker, Docker Swarm, GitLab CI, WordPress, Figma, Cypress, SonarQube, Keycloak, GraphQL, Azure",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-7e415e542701db02",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-e3d710e7f3bfdba0",
+      "language": "pt-br",
+      "type": "project",
+      "title": "ava-pro",
+      "summary": "Extensão de navegador para plataformas Moodle com listagem e busca de disciplinas, cursos fixados, fluxos de login automático, acesso a chats e verificações em segundo plano por novas mensagens.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-e3d710e7f3bfdba0",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-74a9cde0d07a6375",
+      "language": "pt-br",
+      "type": "project",
+      "title": "home-lab",
+      "summary": "Laboratório pessoal de infraestrutura em andamento onde investigo, na prática, as camadas ao redor de uma aplicação, incluindo máquinas virtuais, redes segmentadas, VPNs, firewalls, containers, Kubernetes, identidade e observabilidade.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-74a9cde0d07a6375",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-f4290752cdbb37bd",
+      "language": "pt-br",
+      "type": "project",
+      "title": "infrastructure-and-cluster-notebook",
+      "summary": "Caderno público de engenharia onde registro investigações sobre infraestrutura e clusters por meio de hipóteses, testes reproduzíveis, falhas e revisões, em vez de apresentar o material como um tutorial acabado.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-f4290752cdbb37bd",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-2248ebf81fae5861",
+      "language": "pt-br",
+      "type": "project",
+      "title": "fantastic-images",
+      "summary": "Exploração antiga em TypeScript e Fabric.js para descrever templates de imagem e renderizar composições geradas em canvas. Entre os registros de Gráficos e Renderização estão Gerando Imagens a partir de Templates - Programando Gráficos #02, Gerando Vídeos com Algoritmos - Programando Gráficos #03 e Gerando Imagens a partir de Templates (fabric.js) - Programando Gráficos #02.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-2248ebf81fae5861",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-7a5dd53237228a9c",
+      "language": "pt-br",
+      "type": "project",
+      "title": "fabricjs-object-fit",
+      "summary": "Biblioteca TypeScript publicada que oferece ao Fabric.js um comportamento semelhante a object-fit e object-position do CSS, incluindo suporte à serialização, testes e documentação. Portabilidade para o Fabric.js 7 no PR #23, a partir da feat/fabric-7, seguida pela introdução de uma estrutura de workspace no PR #33 e pela padronização dos nomes dos pacotes no PR #34, ambos a partir da kebab.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-7a5dd53237228a9c",
+      "tags": [],
+      "metadata": {
+        "start_date": "2022",
+        "end_date": "present"
+      }
+    },
+    {
+      "id": "project-f8eb0907e013bd52",
+      "language": "pt-br",
+      "type": "project",
+      "title": "parcel-resolver-pnpm",
+      "summary": "Proof of concept de 2021 para investigar a forma como o Parcel tratava dependências instaladas via symlink pelo pnpm como dependências de código-fonte.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-f8eb0907e013bd52",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-d59c2e5ae2b286b7",
+      "language": "pt-br",
+      "type": "project",
+      "title": "friendly-tnsvue",
+      "summary": "Proof of concept de 2019 para automatizar partes da migração de projetos Vue para NativeScript-Vue por meio de uma CLI, um serviço de migração e modelos reutilizáveis. O histórico está preservado em sete repositórios arquivados na organização friendly-tnsvue; o repositório separado nsvue-colors continua em guesant.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-d59c2e5ae2b286b7",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-6eca0893a4b1de7f",
+      "language": "pt-br",
+      "type": "project",
+      "title": "gir-js",
+      "summary": "Investigação inacabada sobre o uso dos metadados do GObject introspection para expor bibliotecas nativas a runtimes JavaScript por FFI e derivar informações voltadas a TypeScript a partir de typelibs.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-6eca0893a4b1de7f",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-e52479ae69994603",
+      "language": "pt-br",
+      "type": "project",
+      "title": "Unispec",
+      "summary": "Pesquisa e proof of concept arquivados sobre declarar contratos uma vez e derivar tooling para ecossistemas como NestJS, GraphQL, OpenAPI, Swagger e QuickType.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-e52479ae69994603",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-d72b1cd9944fdca3",
+      "language": "pt-br",
+      "type": "project",
+      "title": "Ya Time Marker",
+      "summary": "PWA de 2021 em Ionic e React para registrar e pesquisar marcações de tempo mantendo o histórico no dispositivo, com importação, exportação e exclusão sob controle do usuário.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-d72b1cd9944fdca3",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-1d7ae8174a70062c",
+      "language": "pt-br",
+      "type": "project",
+      "title": "outro-bun",
+      "summary": "Ferramenta pontual em Bun e TypeScript que transformava a exportação da planilha de músicas da colação de grau em um fluxo automatizado de download e processamento de mídia com yt-dlp e FFmpeg.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-1d7ae8174a70062c",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-092237ecf351c55d",
+      "language": "pt-br",
+      "type": "project",
+      "title": "nota-filler",
+      "summary": "Demonstrador antigo para preencher programaticamente uma folha ou template de notas escolares, publicado com uma demo web e um vídeo no JipaCoding.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-092237ecf351c55d",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-c139d9f99f54754a",
+      "language": "pt-br",
+      "type": "project",
+      "title": "alset-aloc",
+      "summary": "Sistema desktop de gestão de aluguéis em C# e WPF desenvolvido em equipe como requisito para conclusão do curso técnico em informática do IFRO.",
+      "url": "https://curriculum.guesant.net/pt-BR/#project-c139d9f99f54754a",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-9b4f6e4f80580492",
+      "language": "pt-br",
+      "type": "case",
+      "title": "Central de Vagas em Creches",
+      "summary": "Atuei como bolsista no time responsável por uma plataforma pública de inscrições, atendimento e gestão de filas de creches. O software foi registrado no INPI sob o processo BR 51 2025 006383-0; a base oficial do INPI permite a consulta pública do registro. Foi uma das minhas primeiras experiências prolongadas com software que chegou à produção e continuou exigindo suporte depois da implantação.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-9b4f6e4f80580492",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-e189c225388edbd3",
+      "language": "pt-br",
+      "type": "case",
+      "title": "Horários do IFRO Ji-Paraná",
+      "summary": "Criei uma ferramenta que transformava os PDFs semanais de horários do campus em informações consultáveis por turma e professor. O que começou como um atalho de recorte depois virou dado estruturado, uma interface separada e, por fim, uma ponte para o problema mais difícil de gerar e administrar horários acadêmicos.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-e189c225388edbd3",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-276a23339b726a29",
+      "language": "pt-br",
+      "type": "case",
+      "title": "SIPEC",
+      "summary": "Atuei full stack em uma plataforma institucional de pesquisas na qual era possível criar projetos, montar formulários e coletar respostas com diferentes modos de acesso.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-276a23339b726a29",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-f77d3e03e3e11138",
+      "language": "pt-br",
+      "type": "case",
+      "title": "SISGHA / Ladesa: Gestão Acadêmica e Horários",
+      "summary": "Cheguei ao SISGHA depois de construir um visualizador pessoal para horários já publicados e perceber que exibir a grade era apenas o fim de um problema muito maior. Minhas contribuições atravessaram CRUDs e interface acadêmica, regras do gerador, infraestrutura e manutenção de cluster e, mais tarde, trabalho em aplicação, domínio e plataforma.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-f77d3e03e3e11138",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-e1b7aac7d2bffa48",
+      "language": "pt-br",
+      "type": "case",
+      "title": "Fishing Booking",
+      "summary": "Entrei em um produto PHP já existente durante uma transição de equipe e ajudei a manter a evolução do sistema enquanto a responsabilidade mudava de mãos.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-e1b7aac7d2bffa48",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-6179cedffdc79401",
+      "language": "pt-br",
+      "type": "case",
+      "title": "Fugiwara Advogados",
+      "summary": "Implementei a primeira versão do site institucional do escritório como um tema WordPress personalizado, com conteúdo estruturado por Secure Custom Fields.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-6179cedffdc79401",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-8c481daec093c6c4",
+      "language": "pt-br",
+      "type": "case",
+      "title": "ava-pro: Moodle Dentro de uma Extensão de Navegador",
+      "summary": "O AVA Pro nasceu dos meus experimentos com web scraping e virou uma extensão que interagia com o Moodle como aplicação autenticada, incluindo disciplinas, busca e fixação, fluxos de login, chats e verificações em segundo plano por novas mensagens.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-8c481daec093c6c4",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-a534dae8dbb06c59",
+      "language": "pt-br",
+      "type": "case",
+      "title": "Scrap Rain: Scraping de Catálogos em Múltiplas Fontes",
+      "summary": "Desenvolvi o Scrap Rain em um freelance para coletar catálogos de quatro sites de móveis e transformar estruturas de página diferentes em dados que pudessem ser persistidos e atualizados de forma incremental.",
+      "url": "https://curriculum.guesant.net/pt-BR/#case-a534dae8dbb06c59",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "experience-536e6e9ff24818f0",
+      "language": "en",
+      "type": "experience",
+      "title": "Rovema Bank",
+      "summary": "Worked on the evolution, maintenance, and production support of corporate systems, collaborating with multidisciplinary teams on fleet management, financial services, and institutional platforms.",
+      "url": "https://curriculum.guesant.net/en/#experience-536e6e9ff24818f0",
+      "tags": [],
+      "metadata": {
+        "position": "Contracted (Outsourced) Full Stack Developer",
+        "start_date": "2025-07",
+        "end_date": "2026-05"
+      }
+    },
+    {
+      "id": "experience-a2c26bf1a182d9f9",
+      "language": "en",
+      "type": "experience",
+      "title": "Defensoria Pública do Estado de Rondônia",
+      "summary": "Continued work on the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO.",
+      "url": "https://curriculum.guesant.net/en/#experience-a2c26bf1a182d9f9",
+      "tags": [],
+      "metadata": {
+        "position": "Scholarship Software Developer",
+        "start_date": "2025-02",
+        "end_date": "2025-09"
+      }
+    },
+    {
+      "id": "experience-6179cedffdc79401",
+      "language": "en",
+      "type": "experience",
+      "title": "Fugiwara Advogados",
+      "summary": "Built the law firm's institutional website end to end, from requirements analysis to deployment.",
+      "url": "https://curriculum.guesant.net/en/#experience-6179cedffdc79401",
+      "tags": [],
+      "metadata": {
+        "position": "Full Stack Web Developer",
+        "start_date": "2025-03",
+        "end_date": "2025-06"
+      }
+    },
+    {
+      "id": "experience-3188e49ac422e562",
+      "language": "en",
+      "type": "experience",
+      "title": "Tribunal de Contas do Estado de Rondônia",
+      "summary": "Developed the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO.",
+      "url": "https://curriculum.guesant.net/en/#experience-3188e49ac422e562",
+      "tags": [],
+      "metadata": {
+        "position": "Scholarship Software Developer",
+        "start_date": "2024-01",
+        "end_date": "2025-01"
+      }
+    },
+    {
+      "id": "experience-e1b7aac7d2bffa48",
+      "language": "en",
+      "type": "experience",
+      "title": "Fishing Booking",
+      "summary": "Evolved, maintained, and supported a fishing tournament platform in production.",
+      "url": "https://curriculum.guesant.net/en/#experience-e1b7aac7d2bffa48",
+      "tags": [],
+      "metadata": {
+        "position": "Software Engineer",
+        "start_date": "2024-02",
+        "end_date": "2024-09"
+      }
+    },
+    {
+      "id": "experience-7946c78ef554e847",
+      "language": "en",
+      "type": "experience",
+      "title": "IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia",
+      "summary": "Participated in software research and development projects at IFRO Campus Ji-Paraná.",
+      "url": "https://curriculum.guesant.net/en/#experience-7946c78ef554e847",
+      "tags": [],
+      "metadata": {
+        "position": "Research Project Member, Academic Schedule Generator",
+        "start_date": "2022-02",
+        "end_date": "2023-12"
+      }
+    },
+    {
+      "id": "education-d7ffe5ff0c3ef795",
+      "language": "en",
+      "type": "education",
+      "title": "IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia",
+      "summary": "Information Technology",
+      "url": "https://curriculum.guesant.net/en/#education-d7ffe5ff0c3ef795",
+      "tags": [],
+      "metadata": {
+        "degree": "Integrated Technical High School",
+        "area": "Information Technology",
+        "start_date": "2021",
+        "end_date": "2023"
+      }
+    },
+    {
+      "id": "skill-6b9fa95d1e4cd1ab",
+      "language": "en",
+      "type": "skill",
+      "title": "Technologies",
+      "summary": "PHP, Symfony, JavaScript, TypeScript, Node.js, NestJS, React, Next.js, React Native, Expo, PostgreSQL, Docker, Docker Swarm, GitLab CI, WordPress, Figma, Cypress, SonarQube, Keycloak, GraphQL, Azure",
+      "url": "https://curriculum.guesant.net/en/#skill-6b9fa95d1e4cd1ab",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-e3d710e7f3bfdba0",
+      "language": "en",
+      "type": "project",
+      "title": "ava-pro",
+      "summary": "A browser extension for Moodle platforms with enrolled-course listing and search, pinned courses, automatic-login flows, chat access and background checks for new messages.",
+      "url": "https://curriculum.guesant.net/en/#project-e3d710e7f3bfdba0",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-74a9cde0d07a6375",
+      "language": "en",
+      "type": "project",
+      "title": "home-lab",
+      "summary": "An ongoing personal infrastructure lab where I investigate the layers around an application in practice, including virtual machines, segmented networks, VPNs, firewalls, containers, Kubernetes, identity and observability.",
+      "url": "https://curriculum.guesant.net/en/#project-74a9cde0d07a6375",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-f4290752cdbb37bd",
+      "language": "en",
+      "type": "project",
+      "title": "infrastructure-and-cluster-notebook",
+      "summary": "A public engineering notebook where I record infrastructure and cluster investigations through hypotheses, reproducible tests, failures and revisions instead of presenting the material as a finished tutorial.",
+      "url": "https://curriculum.guesant.net/en/#project-f4290752cdbb37bd",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-2248ebf81fae5861",
+      "language": "en",
+      "type": "project",
+      "title": "fantastic-images",
+      "summary": "An older TypeScript and Fabric.js exploration for describing image templates and rendering generated compositions on canvas. Selected Graphics and Rendering records include Gerando Imagens a partir de Templates - Programando Gráficos #02, Gerando Vídeos com Algoritmos - Programando Gráficos #03, and Gerando Imagens a partir de Templates (fabric.js) - Programando Gráficos #02.",
+      "url": "https://curriculum.guesant.net/en/#project-2248ebf81fae5861",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-7a5dd53237228a9c",
+      "language": "en",
+      "type": "project",
+      "title": "fabricjs-object-fit",
+      "summary": "Published TypeScript library that provides CSS-like object-fit and object-position behavior for Fabric.js, including serialization support, tests and documentation. Ported the library to Fabric.js 7 in PR #23 from feat/fabric-7, then introduced a workspace structure in PR #33 and standardized package names in PR #34, both from kebab.",
+      "url": "https://curriculum.guesant.net/en/#project-7a5dd53237228a9c",
+      "tags": [],
+      "metadata": {
+        "start_date": "2022",
+        "end_date": "present"
+      }
+    },
+    {
+      "id": "project-f8eb0907e013bd52",
+      "language": "en",
+      "type": "project",
+      "title": "parcel-resolver-pnpm",
+      "summary": "A 2021 proof of concept Parcel resolver that investigated the way Parcel treated pnpm's symlinked dependencies as source dependencies.",
+      "url": "https://curriculum.guesant.net/en/#project-f8eb0907e013bd52",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-d59c2e5ae2b286b7",
+      "language": "en",
+      "type": "project",
+      "title": "friendly-tnsvue",
+      "summary": "A 2019 proof of concept for automating parts of the migration from Vue projects to NativeScript-Vue through a CLI, migration service and reusable migration models. The history is now preserved across seven archived repositories in the friendly-tnsvue organization; the separate nsvue-colors repository remains under guesant.",
+      "url": "https://curriculum.guesant.net/en/#project-d59c2e5ae2b286b7",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-6eca0893a4b1de7f",
+      "language": "en",
+      "type": "project",
+      "title": "gir-js",
+      "summary": "An unfinished investigation into using GObject introspection metadata to expose native libraries to JavaScript runtimes through FFI and generate TypeScript-facing information from typelib data.",
+      "url": "https://curriculum.guesant.net/en/#project-6eca0893a4b1de7f",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-e52479ae69994603",
+      "language": "en",
+      "type": "project",
+      "title": "Unispec",
+      "summary": "An archived research and proof of concept around declaring contracts once and deriving tooling for ecosystems such as NestJS, GraphQL, OpenAPI, Swagger and QuickType.",
+      "url": "https://curriculum.guesant.net/en/#project-e52479ae69994603",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-d72b1cd9944fdca3",
+      "language": "en",
+      "type": "project",
+      "title": "Ya Time Marker",
+      "summary": "A 2021 Ionic and React PWA for marking and searching time records while keeping the user's history on the device, with import, export and deletion under the user's control.",
+      "url": "https://curriculum.guesant.net/en/#project-d72b1cd9944fdca3",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-1d7ae8174a70062c",
+      "language": "en",
+      "type": "project",
+      "title": "outro-bun",
+      "summary": "A one-off Bun and TypeScript tool that turned a graduation-song spreadsheet export into an automated download and media-processing workflow using yt-dlp and FFmpeg.",
+      "url": "https://curriculum.guesant.net/en/#project-1d7ae8174a70062c",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-092237ecf351c55d",
+      "language": "en",
+      "type": "project",
+      "title": "nota-filler",
+      "summary": "An old demonstrator for programmatically filling a school-grade sheet or template, published with a web demo and a JipaCoding walkthrough.",
+      "url": "https://curriculum.guesant.net/en/#project-092237ecf351c55d",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "project-c139d9f99f54754a",
+      "language": "en",
+      "type": "project",
+      "title": "alset-aloc",
+      "summary": "A C# and WPF rental-management desktop system built as a team project for completion of IFRO's technical program in informatics.",
+      "url": "https://curriculum.guesant.net/en/#project-c139d9f99f54754a",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-9b4f6e4f80580492",
+      "language": "en",
+      "type": "case",
+      "title": "Central de Vagas em Creches",
+      "summary": "I worked as a scholarship developer on the team behind a public-sector platform for childcare applications, service workflows and waiting-list management. The software was registered with INPI under process BR 51 2025 006383-0; the official INPI database provides the public lookup for the registration. It became one of my first sustained experiences with software that reached production and continued demanding support after deployment.",
+      "url": "https://curriculum.guesant.net/en/#case-9b4f6e4f80580492",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-d6e50857a3586641",
+      "language": "en",
+      "type": "case",
+      "title": "IFRO Ji-Paraná Schedules",
+      "summary": "I built a tool that turned the campus's weekly schedule PDFs into information students could browse by class and teacher. What began as a cropping shortcut later became structured data, a separate interface and eventually a bridge into the harder problem of generating and managing academic schedules.",
+      "url": "https://curriculum.guesant.net/en/#case-d6e50857a3586641",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-276a23339b726a29",
+      "language": "en",
+      "type": "case",
+      "title": "SIPEC",
+      "summary": "I worked full stack on an institutional surveys platform where users could create projects, assemble forms and collect responses under different access modes.",
+      "url": "https://curriculum.guesant.net/en/#case-276a23339b726a29",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-69926acbfafb735f",
+      "language": "en",
+      "type": "case",
+      "title": "SISGHA / Ladesa: Academic Management and Scheduling",
+      "summary": "I came to SISGHA after building a personal viewer for already-published schedules and realizing that displaying a timetable was only the end of a much larger scheduling problem. My contributions crossed early academic CRUD and UI, generator rules, infrastructure and cluster maintenance, and later application, domain and platform work.",
+      "url": "https://curriculum.guesant.net/en/#case-69926acbfafb735f",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-e1b7aac7d2bffa48",
+      "language": "en",
+      "type": "case",
+      "title": "Fishing Booking",
+      "summary": "I joined an existing PHP product during a team transition and helped keep the system moving while ownership was changing.",
+      "url": "https://curriculum.guesant.net/en/#case-e1b7aac7d2bffa48",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-6179cedffdc79401",
+      "language": "en",
+      "type": "case",
+      "title": "Fugiwara Advogados",
+      "summary": "I implemented the first version of the firm's institutional website as a custom WordPress theme, with structured content managed through Secure Custom Fields.",
+      "url": "https://curriculum.guesant.net/en/#case-6179cedffdc79401",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-605b3bac9d16de54",
+      "language": "en",
+      "type": "case",
+      "title": "ava-pro: Moodle Inside a Browser Extension",
+      "summary": "AVA Pro grew from my web-scraping experiments into a browser extension that interacted with Moodle as an authenticated application, including courses, search and pinning, login flows, chats and background checks for new messages.",
+      "url": "https://curriculum.guesant.net/en/#case-605b3bac9d16de54",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "case-82b2f637dcc256a7",
+      "language": "en",
+      "type": "case",
+      "title": "Scrap Rain: Multi-Source Product Catalog Scraping",
+      "summary": "I built Scrap Rain for a freelance job that collected product catalogs from four furniture websites and turned different page structures into data that could be persisted and updated incrementally.",
+      "url": "https://curriculum.guesant.net/en/#case-82b2f637dcc256a7",
+      "tags": [],
+      "metadata": {}
+    }
+  ]
+}

@@ -21,3 +21,11 @@ cp "$repository_root/build/en/Gabriel_R._Antunes_CV.html" "$repository_root/site
 cp "$repository_root/build/pt-BR/Gabriel_R._Antunes_CV.pdf" "$repository_root/site/pt-BR/curriculo.pdf"
 cp "$repository_root/build/pt-BR/Gabriel_R._Antunes_CV.html" "$repository_root/site/pt-BR/index.html"
 
+docker run --rm \
+  --user "$(id -u):$(id -g)" \
+  --volume "$repository_root:/work" \
+  --workdir /work \
+  --entrypoint python \
+  "$rendercv_image" \
+  /work/scripts/export-lobby.py
+

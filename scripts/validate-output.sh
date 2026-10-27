@@ -11,6 +11,15 @@ docker run --rm \
   "$rendercv_image" \
   /work/scripts/validate-videos.py
 
+docker run --rm \
+  --volume "$repository_root:/work" \
+  --workdir /work \
+  --entrypoint python \
+  "$rendercv_image" \
+  -B /work/scripts/test-export-lobby.py
+
+test -s "$repository_root/site/lobby.json"
+
 test -s "$repository_root/site/en/index.html"
 test -s "$repository_root/site/en/resume.pdf"
 test -s "$repository_root/site/pt-BR/index.html"
