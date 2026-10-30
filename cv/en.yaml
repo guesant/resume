@@ -33,11 +33,11 @@ cv:
           - Contributed to security controls for financial services.
           - Implemented institutional pages and landing pages from designs supplied by the Design team.
       - company: '[Defensoria Pública do Estado de Rondônia](https://www.defensoria.ro.def.br/)'
-        position: Scholarship Software Developer
+        position: Scholarship Software Developer under a Cooperation Agreement with IFRO
         start_date: 2025-02
         end_date: 2025-09
         location: Rondônia, Brazil
-        summary: Continued work on the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO.
+        summary: Continued work on the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO, as a scholarship holder under a cooperation agreement with IFRO. Selected as an alumnus through a public call organized by IFRO staff.
         highlights:
           - Developed full-stack features with JavaScript, TypeScript, Node.js, NestJS, React, and Next.js.
           - Implemented scheduling, queue, and vacancy reports, PDF generation with Bun and jsreport, and five tutorial videos.
@@ -51,7 +51,7 @@ cv:
           - Used shadcn/ui, Radix UI, SonarQube, Cypress, Git, Jira, and sprints.
           - Participated in training, technical support, and knowledge transfer.
       - company: '[Fugiwara Advogados](https://fugiwaraadvogados.com.br/)'
-        position: Full Stack Web Developer
+        position: Full Stack Developer
         start_date: 2025-03
         end_date: 2025-06
         location: Ji-Paraná, Rondônia, Brazil
@@ -66,11 +66,11 @@ cv:
           - Integrated and customized forms with Everest Forms.
           - Deployed the site on Hostinger and configured Cloudflare and DNS.
       - company: '[Tribunal de Contas do Estado de Rondônia](https://www.tce.ro.gov.br/)'
-        position: Scholarship Software Developer
+        position: Scholarship Software Developer under a Cooperation Agreement with IFRO
         start_date: 2024-01
         end_date: 2025-01
         location: Rondônia, Brazil
-        summary: Developed the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO.
+        summary: Developed the Central de Vagas project, coordinated by IFRO in partnership with TCE-RO and DPE-RO, as a scholarship holder under a cooperation agreement with IFRO. Selected as an alumnus through a public call organized by IFRO staff.
         highlights:
           - Developed full-stack features with JavaScript, TypeScript, Node.js, NestJS, React, and Next.js.
           - Refactored screens, forms, and selection, date, and interval components.
@@ -84,7 +84,7 @@ cv:
           - Collaborated on Figma prototypes, Cypress tests, and user support.
           - Worked with agile methods, sprints, Jira, and Git.
       - company: '[Fishing Booking](https://fishingbooking.com.br/)'
-        position: Software Engineer
+        position: Full Stack Developer
         start_date: 2024-02
         end_date: 2024-09
         location: Ji-Paraná, Rondônia, Brazil
@@ -100,11 +100,11 @@ cv:
           - Configured domains and DNS with Registro.br and Cloudflare.
           - Participated in a video-compression microservice and in identifying and fixing critical security vulnerabilities.
       - company: '[IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia](https://portal.ifro.edu.br/ji-parana)'
-        position: Research Project Member, Academic Schedule Generator
+        position: Technical High School Student, Research Project Participant
         start_date: 2022-02
         end_date: 2023-12
         location: Ji-Paraná, Rondônia, Brazil
-        summary: Participated in software research and development projects at IFRO Campus Ji-Paraná.
+        summary: As a student in the Information Technology program integrated with upper secondary education, participated in the Sistema Gerador de Horário Acadêmico research project and software development activities at IFRO Campus Ji-Paraná.
         highlights:
           - Worked as a Junior Technical Developer on a technical-education monitoring dashboard project.
           - Participated in requirements analysis, technology evaluation, interface prototyping, and technical documentation.

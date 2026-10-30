@@ -33,11 +33,11 @@ cv:
           - Colaborei na implementação de controles de segurança para serviços financeiros.
           - Implementei páginas institucionais e landing pages a partir de layouts definidos pelo time de Design.
       - company: '[Defensoria Pública do Estado de Rondônia](https://www.defensoria.ro.def.br/)'
-        position: Bolsista Desenvolvedor de Software
+        position: Bolsista Desenvolvedor de Software via Acordo de Cooperação com o IFRO
         start_date: 2025-02
         end_date: 2025-09
         location: Rondônia, Brasil
-        summary: Continuidade da atuação no projeto Central de Vagas, coordenado pelo IFRO em parceria com TCE-RO e DPE-RO.
+        summary: Continuidade da atuação no projeto Central de Vagas, coordenado pelo IFRO em parceria com TCE-RO e DPE-RO, como bolsista via acordo de cooperação com o IFRO. Selecionado como egresso por edital organizado por servidores do IFRO.
         highlights:
           - Desenvolvi funcionalidades full-stack com JavaScript, TypeScript, Node.js, NestJS, React e Next.js.
           - Implementei relatórios de agendamentos, filas e vagas, geração de PDFs com Bun e jsreport e cinco vídeos tutoriais.
@@ -51,7 +51,7 @@ cv:
           - Utilizei shadcn/ui, Radix UI, SonarQube, Cypress, Git, Jira e sprints.
           - Participei de treinamentos, suporte técnico e transferência de tecnologia.
       - company: '[Fugiwara Advogados](https://fugiwaraadvogados.com.br/)'
-        position: Desenvolvedor Web Full Stack
+        position: Desenvolvedor Full Stack
         start_date: 2025-03
         end_date: 2025-06
         location: Ji-Paraná, Rondônia, Brasil
@@ -66,11 +66,11 @@ cv:
           - Integrei e personalizei formulários com Everest Forms.
           - Realizei a implantação na Hostinger e configurei Cloudflare e DNS.
       - company: '[Tribunal de Contas do Estado de Rondônia](https://www.tce.ro.gov.br/)'
-        position: Bolsista Desenvolvedor de Software
+        position: Bolsista Desenvolvedor de Software via Acordo de Cooperação com o IFRO
         start_date: 2024-01
         end_date: 2025-01
         location: Rondônia, Brasil
-        summary: Desenvolvimento do projeto Central de Vagas, coordenado pelo IFRO em parceria com TCE-RO e DPE-RO.
+        summary: Desenvolvimento do projeto Central de Vagas, coordenado pelo IFRO em parceria com TCE-RO e DPE-RO, como bolsista via acordo de cooperação com o IFRO. Selecionado como egresso por edital organizado por servidores do IFRO.
         highlights:
           - Desenvolvi funcionalidades full-stack com JavaScript, TypeScript, Node.js, NestJS, React e Next.js.
           - Refatorei telas, formulários e componentes de seleção, datas e intervalos.
@@ -84,7 +84,7 @@ cv:
           - Colaborei em protótipos no Figma, testes com Cypress e suporte aos usuários.
           - Trabalhei com metodologia ágil, sprints, Jira e Git.
       - company: '[Fishing Booking](https://fishingbooking.com.br/)'
-        position: Engenheiro de Software
+        position: Desenvolvedor Full Stack
         start_date: 2024-02
         end_date: 2024-09
         location: Ji-Paraná, Rondônia, Brasil
@@ -101,11 +101,11 @@ cv:
           - Participei do desenvolvimento de um microsserviço de compressão de vídeos.
           - Identifiquei e corrigi vulnerabilidades críticas de segurança.
       - company: '[IFRO, Instituto Federal de Educação, Ciência e Tecnologia de Rondônia](https://portal.ifro.edu.br/ji-parana)'
-        position: Integrante do Projeto de Pesquisa Sistema Gerador de Horário Acadêmico
+        position: Estudante do Curso Técnico Integrado ao Ensino Médio, Participante de Projeto de Pesquisa
         start_date: 2022-02
         end_date: 2023-12
         location: Ji-Paraná, Rondônia, Brasil
-        summary: Participação em projetos de pesquisa e desenvolvimento de software no Campus Ji-Paraná.
+        summary: Participação, como estudante do Curso Técnico Integrado ao Ensino Médio em Informática, no Projeto de Pesquisa Sistema Gerador de Horário Acadêmico e em atividades de desenvolvimento de software no Campus Ji-Paraná.
         highlights:
           - Atuei como Desenvolvedor Técnico Júnior no projeto de elaboração de painel de monitoramento do ensino técnico dos estados.
           - Participei do levantamento de requisitos, avaliação de tecnologias, prototipação e documentação técnica.
