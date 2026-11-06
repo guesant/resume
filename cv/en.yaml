@@ -382,9 +382,7 @@ cv:
         start_date: 2021
         end_date: 2023
         location: Ji-Paraná, Rondônia, Brazil
-    skills:
-      - label: Technologies
-        details: PHP, Symfony, JavaScript, TypeScript, Node.js, NestJS, React, Next.js, React Native, Expo, PostgreSQL, Docker, Docker Swarm, GitLab CI, WordPress, Figma, Cypress, SonarQube, Keycloak, GraphQL, Azure
+    skills: []
     certifications:
       - bullet: Bootstrap 4
       - bullet: Front/Back End & UX/UI Design

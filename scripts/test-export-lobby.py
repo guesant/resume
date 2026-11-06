@@ -49,6 +49,34 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(path.read_text().count(f'id="{item["id"]}"'), 1)
             self.assertTrue(item["url"].endswith("#" + item["id"]))
 
+    def test_catalog_filters_private_data_and_rejects_duplicate_ids_and_unsafe_urls(self):
+        from technologies import public_catalog
+        document = {"version": 1, "groups": [{"id": "tools", "labels": {"en": "Tools", "pt-br": "Ferramentas"}, "secret": "hidden", "items": [{"id": "git", "name": "Git", "url": "https://git-scm.com/", "secret": "hidden"}, {"id": "private", "private": True}]}]}
+        catalog = public_catalog(document)
+        self.assertEqual(len(catalog[0]["items"]), 1)
+        self.assertNotIn("hidden", str(catalog))
+        document["groups"][0]["items"].append(document["groups"][0]["items"][0])
+        with self.assertRaises(ValueError):
+            public_catalog(document)
+        document["groups"][0]["items"] = [{"id": "bad", "name": "Bad", "url": "javascript:alert(1)"}]
+        with self.assertRaises(ValueError):
+            public_catalog(document)
+
+    def test_curricula_and_feed_use_the_same_catalog(self):
+        from technologies import curriculum_document, load_catalog
+        catalog = load_catalog()
+        for locale, section in (("en", "skills"), ("pt-BR", "competências")):
+            document = curriculum_document(locale, catalog)
+            self.assertEqual(len(document["cv"]["sections"][section]), len(catalog))
+            exported = module.export_document(document, locale, catalog)
+            skills = [item for item in exported if item["type"] == "skill"]
+            self.assertEqual(len(skills), len(catalog))
+            for group, skill in zip(catalog, skills):
+                self.assertEqual(skill["title"], group["labels"][locale.lower()])
+                self.assertEqual(skill["id"], "skill-" + group["id"])
+                for technology in group["items"]:
+                    self.assertIn(technology["name"], skill["summary"])
+
     def test_empty_document_is_a_valid_empty_export(self):
         self.assertEqual(module.export_document({"cv": {"sections": {}}}, "en"), [])
 

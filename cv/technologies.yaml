@@ -1,0 +1,86 @@
+version: 1
+groups:
+  - id: operating-systems
+    labels: {en: Operating Systems, pt-br: Sistemas Operacionais}
+    items:
+      - {id: gnu, name: GNU, url: 'https://www.gnu.org/'}
+      - {id: linux, name: Linux, url: 'https://www.kernel.org/'}
+      - {id: macos, name: macOS, url: 'https://www.apple.com/br/os/macos/'}
+      - {id: windows, name: Windows, url: 'https://pt.wikipedia.org/wiki/Microsoft_Windows'}
+  - id: tools
+    labels: {en: Tools, pt-br: Ferramentas}
+    items:
+      - {id: git, name: Git, url: 'https://git-scm.com/'}
+      - {id: vim, name: Vim, url: 'https://www.vim.org/'}
+      - {id: bash, name: GNU Bash, url: 'https://www.gnu.org/software/bash/'}
+  - id: containers
+    labels: {en: Containers, pt-br: Containers}
+    items:
+      - {id: docker, name: Docker, url: 'https://docs.docker.com/'}
+      - {id: docker-swarm, name: Docker Swarm, url: 'https://docs.docker.com/engine/swarm/'}
+  - id: clusters
+    labels: {en: Clusters, pt-br: Clusters}
+    items:
+      - {id: kubernetes, name: Kubernetes, url: 'https://kubernetes.io/'}
+      - {id: helm, name: Helm, url: 'https://helm.sh/'}
+      - {id: k3s, name: k3s, url: 'https://k3s.io/'}
+      - {id: proxmox, name: Proxmox CE, url: 'https://www.proxmox.com/'}
+      - {id: portainer, name: Portainer CE, url: 'https://www.portainer.io/'}
+      - {id: pfsense, name: pfSense CE, url: 'https://www.pfsense.org/'}
+  - id: cicd
+    labels: {en: DevOps & CI/CD, pt-br: DevOps e CI/CD}
+    items:
+      - {id: github-actions, name: GitHub Actions, url: 'https://github.com/features/actions'}
+      - {id: gitlab-ci, name: GitLab CI, url: 'https://about.gitlab.com/topics/ci-cd/'}
+      - {id: azure-pipelines, name: Azure Pipelines, url: 'https://azure.microsoft.com/pt-br/products/devops/pipelines'}
+  - id: ecmascript
+    labels: {en: ECMAScript, pt-br: ECMAScript}
+    items:
+      - {id: bun, name: Bun, url: 'https://bun.sh/'}
+      - {id: nodejs, name: Node.js, url: 'https://nodejs.org/en'}
+      - {id: typescript, name: TypeScript, url: 'https://www.typescriptlang.org/'}
+      - {id: javascript, name: JavaScript, url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript'}
+      - {id: nestjs, name: NestJS, url: 'https://nestjs.com/'}
+  - id: frontend
+    labels: {en: Front-end, pt-br: Front-end}
+    items:
+      - {id: html, name: HTML, url: 'https://www.w3.org/html/'}
+      - {id: css, name: CSS, url: 'https://www.w3.org/Style/CSS/'}
+      - {id: react, name: React, url: 'https://react.dev/'}
+      - {id: vue, name: Vue.js, url: 'https://vuejs.org/'}
+      - {id: nextjs, name: Next.js, url: 'https://nextjs.org/'}
+      - {id: react-native, name: React Native, url: 'https://reactnative.dev/'}
+      - {id: expo, name: Expo, url: 'https://expo.dev/'}
+  - id: dotnet
+    labels: {en: .NET, pt-br: .NET}
+    items:
+      - {id: dotnet, name: .NET, url: 'https://dotnet.microsoft.com/pt-br/'}
+      - {id: csharp, name: 'C#', url: 'https://dotnet.microsoft.com/pt-br/languages/csharp'}
+  - id: php
+    labels: {en: PHP, pt-br: PHP}
+    items:
+      - {id: php, name: PHP, url: 'https://www.php.net/'}
+      - {id: yii, name: Yii 2, url: 'https://www.yiiframework.com/'}
+      - {id: wordpress, name: WordPress, url: 'https://wordpress.org/'}
+      - {id: symfony, name: Symfony, url: 'https://symfony.com/'}
+  - id: editors
+    labels: {en: IDEs & Code Editors, pt-br: IDEs e Editores de Código}
+    items:
+      - {id: vscode, name: Visual Studio Code, url: 'https://code.visualstudio.com/'}
+      - {id: webstorm, name: WebStorm, url: 'https://www.jetbrains.com/webstorm/'}
+  - id: data
+    labels: {en: Data & APIs, pt-br: Dados e APIs}
+    items:
+      - {id: postgresql, name: PostgreSQL, url: 'https://www.postgresql.org/'}
+      - {id: graphql, name: GraphQL, url: 'https://graphql.org/'}
+  - id: quality
+    labels: {en: Quality & Design, pt-br: Qualidade e Design}
+    items:
+      - {id: figma, name: Figma, url: 'https://www.figma.com/'}
+      - {id: cypress, name: Cypress, url: 'https://www.cypress.io/'}
+      - {id: sonarqube, name: SonarQube, url: 'https://www.sonarsource.com/products/sonarqube/'}
+  - id: identity-cloud
+    labels: {en: Identity & Cloud, pt-br: Identidade e Cloud}
+    items:
+      - {id: keycloak, name: Keycloak, url: 'https://www.keycloak.org/'}
+      - {id: azure, name: Azure, url: 'https://azure.microsoft.com/'}

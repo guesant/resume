@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from ruamel.yaml import YAML
+from technologies import curriculum_document, load_catalog
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -32,7 +32,7 @@ def public_content_url(value):
     return url
 
 
-def export_document(document, locale):
+def export_document(document, locale, catalog=()):
     items = []
     for section, kind in SECTIONS[locale].items():
         for entry in document.get("cv", {}).get("sections", {}).get(section, []):
@@ -43,6 +43,10 @@ def export_document(document, locale):
                 raise ValueError(f"Missing public title in {section}")
             title = plain(primary)
             identifier = kind + "-" + hashlib.sha256(str(primary).encode()).hexdigest()[:16]
+            if kind == "skill":
+                group = next((group for group in catalog if group["labels"][locale.lower()] == title), None)
+                if group:
+                    identifier = "skill-" + group["id"]
             summary = plain(entry.get("summary") or entry.get("details") or entry.get("area"))
             metadata = {key: plain(entry[key]) for key in ("position", "degree", "area", "start_date", "end_date", "date") if entry.get(key) is not None}
             if kind == "project":
@@ -97,12 +101,22 @@ def add_anchors(path, items):
 
 def main():
     items = []
+    catalog = load_catalog()
     for locale in SECTIONS:
-        document = YAML(typ="safe").load((ROOT / "cv" / f"{locale}.yaml").read_text())
-        localized = export_document(document, locale)
-        add_anchors(ROOT / "site" / locale / "index.html", localized)
+        document = curriculum_document(locale, catalog)
+        localized = export_document(document, locale, catalog)
+        path = ROOT / "site" / locale / "index.html"
+        add_anchors(path, localized)
+        legacy_label = "Technologies" if locale == "en" else "Tecnologias"
+        legacy_id = "skill-" + hashlib.sha256(legacy_label.encode()).hexdigest()[:16]
+        skill = next((item for item in localized if item["type"] == "skill"), None)
+        if skill:
+            content = path.read_text()
+            if f'id="{legacy_id}"' not in content:
+                content = content.replace(f'<span id="{skill["id"]}">', f'<span id="{legacy_id}"></span><span id="{skill["id"]}">', 1)
+                path.write_text(content)
         items.extend(localized)
-    (ROOT / "site" / "lobby.json").write_text(json.dumps({"version": 1, "source": "resume", "items": items}, ensure_ascii=False, indent=2) + "\n")
+    (ROOT / "site" / "lobby.json").write_text(json.dumps({"version": 1, "source": "resume", "items": items, "technologies": catalog}, ensure_ascii=False, indent=2) + "\n")
 
 
 if __name__ == "__main__":

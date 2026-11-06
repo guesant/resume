@@ -6,6 +6,15 @@ repository_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 mkdir -p "$repository_root/build" "$repository_root/site/en" "$repository_root/site/pt-BR"
 
+docker run --rm \
+  --user "$(id -u):$(id -g)" \
+  --volume "$repository_root:/work" \
+  --workdir /work \
+  --env PYTHONDONTWRITEBYTECODE=1 \
+  --entrypoint python \
+  "$rendercv_image" \
+  /work/scripts/technologies.py
+
 for locale in en pt-BR; do
   docker run --rm \
     --user "$(id -u):$(id -g)" \
@@ -13,7 +22,7 @@ for locale in en pt-BR; do
     --volume "$repository_root:/work" \
     --workdir /work \
     "$rendercv_image" \
-    render "cv/${locale}.yaml" --quiet
+    render "build/inputs/${locale}.yaml" --quiet
 done
 
 cp "$repository_root/build/en/Gabriel_R._Antunes_CV.pdf" "$repository_root/site/en/resume.pdf"
@@ -25,6 +34,7 @@ docker run --rm \
   --user "$(id -u):$(id -g)" \
   --volume "$repository_root:/work" \
   --workdir /work \
+  --env PYTHONDONTWRITEBYTECODE=1 \
   --entrypoint python \
   "$rendercv_image" \
   /work/scripts/export-lobby.py

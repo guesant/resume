@@ -29,7 +29,7 @@ The generated files are written under `build/`. The public site is assembled und
 
 ## Sources
 
-The rendering script also publishes `site/lobby.json`, a versioned static public index for the Lobby. Experiences, education, explicit skills, projects and cases come from the existing CV YAML, without a second editorial catalog. Public entries receive matching anchors in the generated curriculum HTML. The export omits contact details, rendering settings, highlights and arbitrary extra fields. Technologies are not inferred from project prose.
+The rendering script also publishes `site/lobby.json`, a versioned static public index for the Lobby. Experiences, education, projects and cases come from the CV YAML. Skills come from the shared `cv/technologies.yaml` catalog, which also generates the competencies in both curricula. The same feed exports the structured public technology catalog for the Lobby and profile README. Public entries receive matching anchors in the generated curriculum HTML. The export omits contact details, rendering settings, highlights and arbitrary extra fields. Technologies are not inferred from project prose.
 
 `scripts/test-export-lobby.py` tests the allowlist, visibility, stable identifiers and canonical anchors inside the RenderCV container through `scripts/validate-output.sh`.
 

@@ -102,12 +102,132 @@
       }
     },
     {
-      "id": "skill-7e415e542701db02",
+      "id": "skill-operating-systems",
       "language": "pt-br",
       "type": "skill",
-      "title": "Tecnologias",
-      "summary": "PHP, Symfony, JavaScript, TypeScript, Node.js, NestJS, React, Next.js, React Native, Expo, PostgreSQL, Docker, Docker Swarm, GitLab CI, WordPress, Figma, Cypress, SonarQube, Keycloak, GraphQL, Azure",
-      "url": "https://curriculum.guesant.net/pt-BR/#skill-7e415e542701db02",
+      "title": "Sistemas Operacionais",
+      "summary": "GNU, Linux, macOS, Windows",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-operating-systems",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-tools",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Ferramentas",
+      "summary": "Git, Vim, GNU Bash",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-tools",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-containers",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Containers",
+      "summary": "Docker, Docker Swarm",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-containers",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-clusters",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Clusters",
+      "summary": "Kubernetes, Helm, k3s, Proxmox CE, Portainer CE, pfSense CE",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-clusters",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-cicd",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "DevOps e CI/CD",
+      "summary": "GitHub Actions, GitLab CI, Azure Pipelines",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-cicd",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-ecmascript",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "ECMAScript",
+      "summary": "Bun, Node.js, TypeScript, JavaScript, NestJS",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-ecmascript",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-frontend",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Front-end",
+      "summary": "HTML, CSS, React, Vue.js, Next.js, React Native, Expo",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-frontend",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-dotnet",
+      "language": "pt-br",
+      "type": "skill",
+      "title": ".NET",
+      "summary": ".NET, C#",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-dotnet",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-php",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "PHP",
+      "summary": "PHP, Yii 2, WordPress, Symfony",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-php",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-editors",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "IDEs e Editores de Código",
+      "summary": "Visual Studio Code, WebStorm",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-editors",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-data",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Dados e APIs",
+      "summary": "PostgreSQL, GraphQL",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-data",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-quality",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Qualidade e Design",
+      "summary": "Figma, Cypress, SonarQube",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-quality",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-identity-cloud",
+      "language": "pt-br",
+      "type": "skill",
+      "title": "Identidade e Cloud",
+      "summary": "Keycloak, Azure",
+      "url": "https://curriculum.guesant.net/pt-BR/#skill-identity-cloud",
       "tags": [],
       "metadata": {}
     },
@@ -445,12 +565,132 @@
       }
     },
     {
-      "id": "skill-6b9fa95d1e4cd1ab",
+      "id": "skill-operating-systems",
       "language": "en",
       "type": "skill",
-      "title": "Technologies",
-      "summary": "PHP, Symfony, JavaScript, TypeScript, Node.js, NestJS, React, Next.js, React Native, Expo, PostgreSQL, Docker, Docker Swarm, GitLab CI, WordPress, Figma, Cypress, SonarQube, Keycloak, GraphQL, Azure",
-      "url": "https://curriculum.guesant.net/en/#skill-6b9fa95d1e4cd1ab",
+      "title": "Operating Systems",
+      "summary": "GNU, Linux, macOS, Windows",
+      "url": "https://curriculum.guesant.net/en/#skill-operating-systems",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-tools",
+      "language": "en",
+      "type": "skill",
+      "title": "Tools",
+      "summary": "Git, Vim, GNU Bash",
+      "url": "https://curriculum.guesant.net/en/#skill-tools",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-containers",
+      "language": "en",
+      "type": "skill",
+      "title": "Containers",
+      "summary": "Docker, Docker Swarm",
+      "url": "https://curriculum.guesant.net/en/#skill-containers",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-clusters",
+      "language": "en",
+      "type": "skill",
+      "title": "Clusters",
+      "summary": "Kubernetes, Helm, k3s, Proxmox CE, Portainer CE, pfSense CE",
+      "url": "https://curriculum.guesant.net/en/#skill-clusters",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-cicd",
+      "language": "en",
+      "type": "skill",
+      "title": "DevOps & CI/CD",
+      "summary": "GitHub Actions, GitLab CI, Azure Pipelines",
+      "url": "https://curriculum.guesant.net/en/#skill-cicd",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-ecmascript",
+      "language": "en",
+      "type": "skill",
+      "title": "ECMAScript",
+      "summary": "Bun, Node.js, TypeScript, JavaScript, NestJS",
+      "url": "https://curriculum.guesant.net/en/#skill-ecmascript",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-frontend",
+      "language": "en",
+      "type": "skill",
+      "title": "Front-end",
+      "summary": "HTML, CSS, React, Vue.js, Next.js, React Native, Expo",
+      "url": "https://curriculum.guesant.net/en/#skill-frontend",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-dotnet",
+      "language": "en",
+      "type": "skill",
+      "title": ".NET",
+      "summary": ".NET, C#",
+      "url": "https://curriculum.guesant.net/en/#skill-dotnet",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-php",
+      "language": "en",
+      "type": "skill",
+      "title": "PHP",
+      "summary": "PHP, Yii 2, WordPress, Symfony",
+      "url": "https://curriculum.guesant.net/en/#skill-php",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-editors",
+      "language": "en",
+      "type": "skill",
+      "title": "IDEs & Code Editors",
+      "summary": "Visual Studio Code, WebStorm",
+      "url": "https://curriculum.guesant.net/en/#skill-editors",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-data",
+      "language": "en",
+      "type": "skill",
+      "title": "Data & APIs",
+      "summary": "PostgreSQL, GraphQL",
+      "url": "https://curriculum.guesant.net/en/#skill-data",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-quality",
+      "language": "en",
+      "type": "skill",
+      "title": "Quality & Design",
+      "summary": "Figma, Cypress, SonarQube",
+      "url": "https://curriculum.guesant.net/en/#skill-quality",
+      "tags": [],
+      "metadata": {}
+    },
+    {
+      "id": "skill-identity-cloud",
+      "language": "en",
+      "type": "skill",
+      "title": "Identity & Cloud",
+      "summary": "Keycloak, Azure",
+      "url": "https://curriculum.guesant.net/en/#skill-identity-cloud",
       "tags": [],
       "metadata": {}
     },
@@ -687,6 +927,350 @@
       "url": "https://curriculum.guesant.net/en/#case-82b2f637dcc256a7",
       "tags": [],
       "metadata": {}
+    }
+  ],
+  "technologies": [
+    {
+      "id": "operating-systems",
+      "labels": {
+        "en": "Operating Systems",
+        "pt-br": "Sistemas Operacionais"
+      },
+      "items": [
+        {
+          "id": "gnu",
+          "name": "GNU",
+          "url": "https://www.gnu.org/"
+        },
+        {
+          "id": "linux",
+          "name": "Linux",
+          "url": "https://www.kernel.org/"
+        },
+        {
+          "id": "macos",
+          "name": "macOS",
+          "url": "https://www.apple.com/br/os/macos/"
+        },
+        {
+          "id": "windows",
+          "name": "Windows",
+          "url": "https://pt.wikipedia.org/wiki/Microsoft_Windows"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "labels": {
+        "en": "Tools",
+        "pt-br": "Ferramentas"
+      },
+      "items": [
+        {
+          "id": "git",
+          "name": "Git",
+          "url": "https://git-scm.com/"
+        },
+        {
+          "id": "vim",
+          "name": "Vim",
+          "url": "https://www.vim.org/"
+        },
+        {
+          "id": "bash",
+          "name": "GNU Bash",
+          "url": "https://www.gnu.org/software/bash/"
+        }
+      ]
+    },
+    {
+      "id": "containers",
+      "labels": {
+        "en": "Containers",
+        "pt-br": "Containers"
+      },
+      "items": [
+        {
+          "id": "docker",
+          "name": "Docker",
+          "url": "https://docs.docker.com/"
+        },
+        {
+          "id": "docker-swarm",
+          "name": "Docker Swarm",
+          "url": "https://docs.docker.com/engine/swarm/"
+        }
+      ]
+    },
+    {
+      "id": "clusters",
+      "labels": {
+        "en": "Clusters",
+        "pt-br": "Clusters"
+      },
+      "items": [
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "url": "https://kubernetes.io/"
+        },
+        {
+          "id": "helm",
+          "name": "Helm",
+          "url": "https://helm.sh/"
+        },
+        {
+          "id": "k3s",
+          "name": "k3s",
+          "url": "https://k3s.io/"
+        },
+        {
+          "id": "proxmox",
+          "name": "Proxmox CE",
+          "url": "https://www.proxmox.com/"
+        },
+        {
+          "id": "portainer",
+          "name": "Portainer CE",
+          "url": "https://www.portainer.io/"
+        },
+        {
+          "id": "pfsense",
+          "name": "pfSense CE",
+          "url": "https://www.pfsense.org/"
+        }
+      ]
+    },
+    {
+      "id": "cicd",
+      "labels": {
+        "en": "DevOps & CI/CD",
+        "pt-br": "DevOps e CI/CD"
+      },
+      "items": [
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "url": "https://github.com/features/actions"
+        },
+        {
+          "id": "gitlab-ci",
+          "name": "GitLab CI",
+          "url": "https://about.gitlab.com/topics/ci-cd/"
+        },
+        {
+          "id": "azure-pipelines",
+          "name": "Azure Pipelines",
+          "url": "https://azure.microsoft.com/pt-br/products/devops/pipelines"
+        }
+      ]
+    },
+    {
+      "id": "ecmascript",
+      "labels": {
+        "en": "ECMAScript",
+        "pt-br": "ECMAScript"
+      },
+      "items": [
+        {
+          "id": "bun",
+          "name": "Bun",
+          "url": "https://bun.sh/"
+        },
+        {
+          "id": "nodejs",
+          "name": "Node.js",
+          "url": "https://nodejs.org/en"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+        },
+        {
+          "id": "nestjs",
+          "name": "NestJS",
+          "url": "https://nestjs.com/"
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "labels": {
+        "en": "Front-end",
+        "pt-br": "Front-end"
+      },
+      "items": [
+        {
+          "id": "html",
+          "name": "HTML",
+          "url": "https://www.w3.org/html/"
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "url": "https://www.w3.org/Style/CSS/"
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "url": "https://react.dev/"
+        },
+        {
+          "id": "vue",
+          "name": "Vue.js",
+          "url": "https://vuejs.org/"
+        },
+        {
+          "id": "nextjs",
+          "name": "Next.js",
+          "url": "https://nextjs.org/"
+        },
+        {
+          "id": "react-native",
+          "name": "React Native",
+          "url": "https://reactnative.dev/"
+        },
+        {
+          "id": "expo",
+          "name": "Expo",
+          "url": "https://expo.dev/"
+        }
+      ]
+    },
+    {
+      "id": "dotnet",
+      "labels": {
+        "en": ".NET",
+        "pt-br": ".NET"
+      },
+      "items": [
+        {
+          "id": "dotnet",
+          "name": ".NET",
+          "url": "https://dotnet.microsoft.com/pt-br/"
+        },
+        {
+          "id": "csharp",
+          "name": "C#",
+          "url": "https://dotnet.microsoft.com/pt-br/languages/csharp"
+        }
+      ]
+    },
+    {
+      "id": "php",
+      "labels": {
+        "en": "PHP",
+        "pt-br": "PHP"
+      },
+      "items": [
+        {
+          "id": "php",
+          "name": "PHP",
+          "url": "https://www.php.net/"
+        },
+        {
+          "id": "yii",
+          "name": "Yii 2",
+          "url": "https://www.yiiframework.com/"
+        },
+        {
+          "id": "wordpress",
+          "name": "WordPress",
+          "url": "https://wordpress.org/"
+        },
+        {
+          "id": "symfony",
+          "name": "Symfony",
+          "url": "https://symfony.com/"
+        }
+      ]
+    },
+    {
+      "id": "editors",
+      "labels": {
+        "en": "IDEs & Code Editors",
+        "pt-br": "IDEs e Editores de Código"
+      },
+      "items": [
+        {
+          "id": "vscode",
+          "name": "Visual Studio Code",
+          "url": "https://code.visualstudio.com/"
+        },
+        {
+          "id": "webstorm",
+          "name": "WebStorm",
+          "url": "https://www.jetbrains.com/webstorm/"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "labels": {
+        "en": "Data & APIs",
+        "pt-br": "Dados e APIs"
+      },
+      "items": [
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "url": "https://www.postgresql.org/"
+        },
+        {
+          "id": "graphql",
+          "name": "GraphQL",
+          "url": "https://graphql.org/"
+        }
+      ]
+    },
+    {
+      "id": "quality",
+      "labels": {
+        "en": "Quality & Design",
+        "pt-br": "Qualidade e Design"
+      },
+      "items": [
+        {
+          "id": "figma",
+          "name": "Figma",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "id": "cypress",
+          "name": "Cypress",
+          "url": "https://www.cypress.io/"
+        },
+        {
+          "id": "sonarqube",
+          "name": "SonarQube",
+          "url": "https://www.sonarsource.com/products/sonarqube/"
+        }
+      ]
+    },
+    {
+      "id": "identity-cloud",
+      "labels": {
+        "en": "Identity & Cloud",
+        "pt-br": "Identidade e Cloud"
+      },
+      "items": [
+        {
+          "id": "keycloak",
+          "name": "Keycloak",
+          "url": "https://www.keycloak.org/"
+        },
+        {
+          "id": "azure",
+          "name": "Azure",
+          "url": "https://azure.microsoft.com/"
+        }
+      ]
     }
   ]
 }
