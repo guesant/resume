@@ -347,13 +347,18 @@ cv:
         summary: A C# and WPF rental-management desktop system built as a team project for completion of IFRO's technical program in informatics.
     cases:
       - name: '[Central de Vagas em Creches](https://mpc.ro.gov.br/2025/05/26/atuacao-ativa-do-mpc-ro-resulta-em-100-de-adesao-dos-municipios-a-central-de-vagas-em-creche/)'
-        summary: I worked as a scholarship developer on the team behind a public-sector platform for childcare applications, service workflows and waiting-list management. The software was registered with INPI under process BR 51 2025 006383-0; the [official INPI database](https://busca.inpi.gov.br/pePI/jsp/programas/ProgramaSearchBasico.jsp) provides the public lookup for the registration. It became one of my first sustained experiences with software that reached production and continued demanding support after deployment.
+        summary: >-
+          I worked as a scholarship developer on the team behind a public-sector platform for childcare applications, service workflows and waiting-list management. The software was registered with INPI under
+          process BR 51 2025 006383-0; the [official INPI database](https://busca.inpi.gov.br/pePI/jsp/programas/ProgramaSearchBasico.jsp) provides the public lookup for the registration. It became one of my
+          first sustained experiences with software that reached production and continued demanding support after deployment.
       - name: IFRO Ji-Paraná Schedules
         summary: I built a tool that turned the campus's weekly schedule PDFs into information students could browse by class and teacher. What began as a cropping shortcut later became structured data, a separate interface and eventually a bridge into the harder problem of generating and managing academic schedules.
       - name: SIPEC
         summary: I worked full stack on an institutional surveys platform where users could create projects, assemble forms and collect responses under different access modes.
       - name: 'SISGHA / Ladesa: Academic Management and Scheduling'
-        summary: I came to SISGHA after building a personal viewer for already-published schedules and realizing that displaying a timetable was only the end of a much larger scheduling problem. My contributions crossed early academic CRUD and UI, generator rules, infrastructure and cluster maintenance, and later application, domain and platform work.
+        summary: >-
+          I came to SISGHA after building a personal viewer for already-published schedules and realizing that displaying a timetable was only the end of a much larger scheduling problem. My contributions
+          crossed early academic CRUD and UI, generator rules, infrastructure and cluster maintenance, and later application, domain and platform work.
       - name: '[Fishing Booking](https://fishingbooking.com.br/)'
         summary: I joined an existing PHP product during a team transition and helped keep the system moving while ownership was changing.
       - name: '[Fugiwara Advogados](https://fugiwaraadvogados.com.br/)'
@@ -400,4 +405,3 @@ settings:
   render_command:
     output_folder: ../build/en
     dont_generate_png: true
-

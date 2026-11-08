@@ -2,31 +2,20 @@
 set -euo pipefail
 
 repository_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-rendercv_image='ghcr.io/rendercv/rendercv@sha256:699aaee00c9e6754e75bdfbbc37439d6e94ec32d67f0e4065b276ab8b66929f7'
+cd "$repository_root"
 
-docker run --rm \
-  --volume "$repository_root:/work" \
-  --workdir /work \
-  --entrypoint python \
-  "$rendercv_image" \
-  /work/scripts/validate-videos.py
+python scripts/validate-videos.py
+python -B scripts/test-export-lobby.py
 
-docker run --rm \
-  --volume "$repository_root:/work" \
-  --workdir /work \
-  --entrypoint python \
-  "$rendercv_image" \
-  -B /work/scripts/test-export-lobby.py
+test -s site/lobby.json
+test -s site/en/index.html
+test -s site/en/resume.pdf
+test -s site/pt-BR/index.html
+test -s site/pt-BR/curriculo.pdf
 
-test -s "$repository_root/site/lobby.json"
-
-test -s "$repository_root/site/en/index.html"
-test -s "$repository_root/site/en/resume.pdf"
-test -s "$repository_root/site/pt-BR/index.html"
-test -s "$repository_root/site/pt-BR/curriculo.pdf"
-
-for file in "$repository_root/site/en/index.html" "$repository_root/site/pt-BR/index.html"; do
-  ! grep -Fq 'John Doe' "$file"
-  ! grep -Fq 'TODO' "$file"
+for file in site/en/index.html site/pt-BR/index.html; do
+  if grep -Fq -e 'John Doe' -e 'TODO' "$file"; then
+    printf 'Placeholder content in %s\n' "$file" >&2
+    exit 1
+  fi
 done
-

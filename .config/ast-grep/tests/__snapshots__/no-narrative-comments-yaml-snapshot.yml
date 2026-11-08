@@ -1,0 +1,18 @@
+id: no-narrative-comments-yaml
+snapshots:
+  ? |
+    # v7.0.1 is needed because old versions were broken
+    title: Lobby
+  : labels:
+      - source: '# v7.0.1 is needed because old versions were broken'
+        style: primary
+        start: 0
+        end: 51
+  ? |
+    # Keep this entry until the page is redesigned.
+    title: Lobby
+  : labels:
+      - source: '# Keep this entry until the page is redesigned.'
+        style: primary
+        start: 0
+        end: 47

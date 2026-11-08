@@ -1,0 +1,12 @@
+id: shell-pipe-requires-pipefail
+snapshots:
+  ? |
+    run: |
+      helm template app | k3s kubectl apply -f -
+  : labels:
+    - source: |
+        |
+          helm template app | k3s kubectl apply -f -
+      style: primary
+      start: 5
+      end: 52

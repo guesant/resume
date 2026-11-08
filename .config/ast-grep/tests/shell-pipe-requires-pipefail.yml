@@ -1,0 +1,10 @@
+id: shell-pipe-requires-pipefail
+valid:
+  - |
+    run: |
+      set -o pipefail
+      helm template app | k3s kubectl apply -f -
+invalid:
+  - |
+    run: |
+      helm template app | k3s kubectl apply -f -

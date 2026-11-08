@@ -19,13 +19,15 @@ algorithms group related videos without creating a generic videos section.
 
 ## Local rendering
 
-The repository uses the pinned RenderCV container from the publishing workflow:
+Use Docker and Compose to render and validate the curriculum:
 
 ```sh
-./scripts/render-resume.sh
+docker compose -f .config/compose.yaml run --build --rm render
 ```
 
 The generated files are written under `build/`. The public site is assembled under `site/`.
+
+See [Tooling](docs/tooling.md) for the quality checks and image pins.
 
 ## Sources
 

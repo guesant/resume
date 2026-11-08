@@ -354,13 +354,20 @@ cv:
         summary: Sistema desktop de gestão de aluguéis em C# e WPF desenvolvido em equipe como requisito para conclusão do curso técnico em informática do IFRO.
     cases:
       - name: '[Central de Vagas em Creches](https://mpc.ro.gov.br/2025/05/26/atuacao-ativa-do-mpc-ro-resulta-em-100-de-adesao-dos-municipios-a-central-de-vagas-em-creche/)'
-        summary: Atuei como bolsista no time responsável por uma plataforma pública de inscrições, atendimento e gestão de filas de creches. O software foi registrado no INPI sob o processo BR 51 2025 006383-0; a [base oficial do INPI](https://busca.inpi.gov.br/pePI/jsp/programas/ProgramaSearchBasico.jsp) permite a consulta pública do registro. Foi uma das minhas primeiras experiências prolongadas com software que chegou à produção e continuou exigindo suporte depois da implantação.
+        summary: >-
+          Atuei como bolsista no time responsável por uma plataforma pública de inscrições, atendimento e gestão de filas de creches. O software foi registrado no INPI sob o processo BR 51 2025 006383-0; a
+          [base oficial do INPI](https://busca.inpi.gov.br/pePI/jsp/programas/ProgramaSearchBasico.jsp) permite a consulta pública do registro. Foi uma das minhas primeiras experiências prolongadas com software
+          que chegou à produção e continuou exigindo suporte depois da implantação.
       - name: Horários do IFRO Ji-Paraná
-        summary: Criei uma ferramenta que transformava os PDFs semanais de horários do campus em informações consultáveis por turma e professor. O que começou como um atalho de recorte depois virou dado estruturado, uma interface separada e, por fim, uma ponte para o problema mais difícil de gerar e administrar horários acadêmicos.
+        summary: >-
+          Criei uma ferramenta que transformava os PDFs semanais de horários do campus em informações consultáveis por turma e professor. O que começou como um atalho de recorte depois virou dado estruturado,
+          uma interface separada e, por fim, uma ponte para o problema mais difícil de gerar e administrar horários acadêmicos.
       - name: SIPEC
         summary: Atuei full stack em uma plataforma institucional de pesquisas na qual era possível criar projetos, montar formulários e coletar respostas com diferentes modos de acesso.
       - name: 'SISGHA / Ladesa: Gestão Acadêmica e Horários'
-        summary: Cheguei ao SISGHA depois de construir um visualizador pessoal para horários já publicados e perceber que exibir a grade era apenas o fim de um problema muito maior. Minhas contribuições atravessaram CRUDs e interface acadêmica, regras do gerador, infraestrutura e manutenção de cluster e, mais tarde, trabalho em aplicação, domínio e plataforma.
+        summary: >-
+          Cheguei ao SISGHA depois de construir um visualizador pessoal para horários já publicados e perceber que exibir a grade era apenas o fim de um problema muito maior. Minhas contribuições atravessaram
+          CRUDs e interface acadêmica, regras do gerador, infraestrutura e manutenção de cluster e, mais tarde, trabalho em aplicação, domínio e plataforma.
       - name: '[Fishing Booking](https://fishingbooking.com.br/)'
         summary: Entrei em um produto PHP já existente durante uma transição de equipe e ajudei a manter a evolução do sistema enquanto a responsabilidade mudava de mãos.
       - name: '[Fugiwara Advogados](https://fugiwaraadvogados.com.br/)'

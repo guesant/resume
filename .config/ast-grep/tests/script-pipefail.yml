@@ -1,0 +1,9 @@
+id: script-pipefail
+valid:
+  - |
+    set -euo pipefail
+    producer | consumer
+invalid:
+  - |
+    set -eu
+    producer | consumer

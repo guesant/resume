@@ -1,0 +1,16 @@
+id: no-narrative-comments-yaml
+valid:
+  - |
+    uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+  - |
+    # yamllint disable rule:line-length
+    title: Lobby
+  - |
+    url: https://example.com/a#section
+invalid:
+  - |
+    # v7.0.1 is needed because old versions were broken
+    title: Lobby
+  - |
+    # Keep this entry until the page is redesigned.
+    title: Lobby

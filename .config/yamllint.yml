@@ -1,0 +1,14 @@
+extends: default
+ignore: |
+  **/node_modules/**
+  .config/ast-grep/tests/__snapshots__/**
+  .config/python/.venv/**
+  .config/cursor-assets.yaml
+  .config/design-assets.yaml
+rules:
+  braces: disable
+  comments: disable
+  document-start: disable
+  line-length:
+    max: 320
+  truthy: disable

@@ -1,0 +1,7 @@
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+overrides:
+  markdownlint>re2js: 2.8.7
+  micromark-extension-math>katex: 0.18.2
+allowBuilds:
+  '@ast-grep/cli': true

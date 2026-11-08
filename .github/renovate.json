@@ -1,0 +1,151 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "timezone": "America/Sao_Paulo",
+  "schedule": [
+    "* 0-5 * * 1"
+  ],
+  "automerge": false,
+  "prConcurrentLimit": 3,
+  "prHourlyLimit": 2,
+  "dependencyDashboard": true,
+  "minimumReleaseAge": "1 day",
+  "minimumReleaseAgeBuffer": "30 minutes",
+  "minimumReleaseAgeBehaviour": "timestamp-required",
+  "internalChecksFilter": "strict",
+  "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": [
+      "* 0-5 * * 1"
+    ]
+  },
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "minimumReleaseAge": null,
+    "schedule": [
+      "at any time"
+    ],
+    "automerge": false
+  },
+  "ignorePaths": [
+    "**/node_modules/**",
+    ".local/**",
+    ".config/ast-grep/tests/**"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "groupName": null,
+      "automerge": false
+    },
+    {
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "groupName": "javascript tooling and application"
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "groupName": "github actions"
+    },
+    {
+      "matchPackageNames": [
+        "/^vitest$/",
+        "/^@vitest\\//"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "groupName": "vitest tooling"
+    },
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "groupName": "container images"
+    },
+    {
+      "matchDatasources": [
+        "pypi"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin"
+      ],
+      "groupName": "python tooling"
+    },
+    {
+      "matchDatasources": [
+        "deb"
+      ],
+      "groupName": "debian packages",
+      "registryUrls": [
+        "https://deb.debian.org/debian?suite=bookworm&components=main&binaryArch=amd64",
+        "https://deb.debian.org/debian-security?suite=bookworm-security&components=main&binaryArch=amd64"
+      ]
+    },
+    {
+      "matchFileNames": [
+        ".config/audit/**",
+        ".config/python/**"
+      ],
+      "addLabels": [
+        "manual-audit-required"
+      ]
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^\\.github/workflows/.*\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "(?<depName>node|ghcr\\.io/renovatebot/renovate):(?<currentValue>[0-9.]+(?:-bookworm(?:-slim)?|-full))@(?<currentDigest>sha256:[a-f0-9]{64})"
+      ],
+      "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^(?:\\.config|\\.docker)\\/Dockerfile$/"
+      ],
+      "matchStrings": [
+        "ADD --checksum=sha256:(?<currentDigest>[a-f0-9]{64}) https://github\\.com/nodejs/corepack/releases/download/(?<currentValue>v[0-9.]+)/corepack\\.tgz"
+      ],
+      "depNameTemplate": "nodejs/corepack",
+      "datasourceTemplate": "github-release-attachments"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+id: shell-pipe-requires-pipefail
+language: yaml
+severity: error
+message: "ansible.builtin.shell piping into k3s kubectl must set -o pipefail, so a failing helm template can't silently succeed"
+rule:
+  all:
+    - kind: block_scalar
+    - regex: "\\|\\s*k3s kubectl"
+    - not:
+        regex: "set -o pipefail"

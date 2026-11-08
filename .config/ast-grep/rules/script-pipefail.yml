@@ -1,0 +1,17 @@
+id: script-pipefail
+language: Bash
+severity: error
+message: Declare pipefail in project scripts that use pipelines.
+files:
+  - '**/*.sh'
+  - '**/*.bash'
+rule:
+  all:
+    - kind: pipeline
+    - not:
+        inside:
+          kind: program
+          stopBy: end
+          has:
+            kind: command
+            regex: '^set\s+-[A-Za-z]*o\s+pipefail(?:\s|$)'

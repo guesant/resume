@@ -1,45 +1,134 @@
-name: publish curriculum
+name: Publish curriculum
 
 on:
   push:
     branches: [main]
   pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
-  build:
-    timeout-minutes: 10
+  quality:
     runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      security-events: write
     steps:
       - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
+      - name: Prepare the application image for Trivy
+        id: image
+        run: |
+          set -eu
+          mkdir -p .local
+          docker compose -f .config/compose.yaml build render
+          docker image save --output .local/scan-image.tar guesant-resume-render:local
+      - name: Validate repository
+        if: '!cancelled()'
+        run: docker compose -f .config/compose.yaml run --build --rm quality
+      - name: Scan source
+        if: '!cancelled()'
+        run: docker compose -f .config/compose.yaml run --build --rm semgrep
+      - name: Scan build image
+        if: ${{ !cancelled() && steps.image.outcome == 'success' }}
+        run: docker compose -f .config/compose.yaml run --rm image-audit
+      - name: Review dependencies
+        if: ${{ !cancelled() && github.event_name == 'pull_request' }}
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294
+        with:
+          fail-on-severity: moderate
+          fail-on-scopes: runtime,development
+      - name: Name Code Scanning categories
+        if: ${{ !cancelled() && hashFiles('.local/reports/sarif/*.sarif') != '' }}
+        continue-on-error: true
+        run: docker compose -f .config/compose.yaml run --rm quality python3 .config/name-sarif.py
+      - name: Publish Code Scanning reports
+        if: >-
+          always() && hashFiles('.local/reports/code-scanning/*.sarif') != '' &&
+          (github.ref == 'refs/heads/main' ||
+          (github.event_name == 'pull_request' &&
+          github.event.pull_request.head.repo.full_name == github.repository))
+        continue-on-error: true
+        uses: github/codeql-action/upload-sarif@9b3254085494b55a0f7c4c2b3d2d52cc712ce370
+        with:
+          sarif_file: .local/reports/code-scanning
+      - name: Preserve scanner reports
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: quality-reports
+          path: .local/reports
+          include-hidden-files: true
+          if-no-files-found: ignore
 
-      - name: Render curriculum
-        run: ./scripts/render-resume.sh
+  sbom:
+    needs: quality
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Restore CycloneDX report
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+        with:
+          name: quality-reports
+          path: .local/reports
+      - name: Submit dependency snapshot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF: ${{ github.ref }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        run: docker compose -f .config/compose.yaml run --build --rm snapshot
+      - name: Preserve dependency snapshot
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: dependency-snapshot
+          path: .local/reports/snapshots
+          include-hidden-files: true
+          if-no-files-found: ignore
 
-      - name: Validate generated files
-        run: ./scripts/validate-output.sh
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-
+  build:
+    needs: quality
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Build and validate in Docker
+        run: docker compose -f .config/compose.yaml run --build --rm render
+      - name: Configure Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
           path: site
 
   deploy:
     timeout-minutes: 12
-    if: github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-24.04
     permissions:
@@ -53,4 +142,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
-

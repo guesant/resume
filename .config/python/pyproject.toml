@@ -1,0 +1,5 @@
+[project]
+name = "resume-python-tooling"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = ["yamllint==1.38.0"]
