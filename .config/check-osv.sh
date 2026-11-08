@@ -2,7 +2,7 @@
 set -euo pipefail
 
 mkdir -p .local/reports/sarif
-files=(--lockfile .config/python/uv.lock)
+files=(--lockfile .config/python/uv.lock --lockfile .config/render/uv.lock)
 reports=()
 for lockfile in .config/tooling/*/pnpm-lock.yaml; do
   report=".local/reports/sbom/${lockfile%/pnpm-lock.yaml}/dependencies.cdx.json"
