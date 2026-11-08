@@ -78,12 +78,13 @@ RUN node /opt/link-tool-modules.mjs /opt/tooling-modules /opt/tools
 FROM repository-tools AS quality
 CMD ["bash", ".config/check.sh"]
 
-FROM python:3.12-slim-trixie@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b AS render-dependencies
+FROM python:3.12-alpine3.24@sha256:e064671ca452259bab50e8e2c7bd896e39e9a343bb06ca25234adf6fe18d0fc7 AS render-dependencies
 COPY --from=uv /uv /usr/local/bin/uv
 COPY .config/render/pyproject.toml .config/render/uv.lock /opt/render/
 RUN uv sync --project /opt/render --locked --no-dev --no-install-project
 
-FROM python:3.12-slim-trixie@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b AS render
+FROM python:3.12-alpine3.24@sha256:e064671ca452259bab50e8e2c7bd896e39e9a343bb06ca25234adf6fe18d0fc7 AS render
+RUN apk add --no-cache bash=5.3.9-r1 readline=8.3.3-r1 libncursesw=6.6_p20260516-r0 ncurses-terminfo-base=6.6_p20260516-r0
 COPY --from=render-dependencies /opt/render/.venv /opt/render/.venv
 ENV PATH="/opt/render/.venv/bin:${PATH}"
 WORKDIR /workspace
