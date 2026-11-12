@@ -74,7 +74,6 @@ services:
       - GIT_CONFIG_KEY_0=safe.directory
       - GIT_CONFIG_VALUE_0=/workspace
       - RENOVATE_TOKEN
-      - RENOVATE_DRY_RUN
       - RENOVATE_PLATFORM
       - RENOVATE_REPOSITORIES
       - RENOVATE_USERNAME
