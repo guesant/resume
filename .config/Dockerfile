@@ -15,6 +15,13 @@ FROM koalaman/shellcheck:v0.11.0@sha256:61862eba1fcf09a484ebcc6feea46f1782532571
 FROM mvdan/shfmt:v3.14.1@sha256:8c06884a35683d8763fba6c0d9484d11a61a96da65f8d497d6f625825a6043f2 AS shfmt
 FROM semgrep/semgrep:1.183.0@sha256:2e45517a85e13a9cca14a2a00df6bb48affd66b8ebfae1b0991cd57578362fb0 AS semgrep
 
+FROM python:3.12-alpine3.24@sha256:e064671ca452259bab50e8e2c7bd896e39e9a343bb06ca25234adf6fe18d0fc7 AS python-base
+RUN apk add --no-cache krb5-libs=1.22.3-r0 \
+  && printf '%s\n' 'pip==26.3 --hash=sha256:f3b60b20ffaadd4415ed7957212a38ac63fa4c5fa375bd0f4a797777940fad13' \
+  > /tmp/pip-requirements.txt \
+  && python -m pip install --no-cache-dir --no-deps --require-hashes -r /tmp/pip-requirements.txt \
+  && rm /tmp/pip-requirements.txt
+
 FROM node:24.15.0-bookworm@sha256:f22d6a1f082c02f292e86929b5b0442ac2e5eaf438a5dea9b1566601c3e05940 AS node-tools
 ADD --checksum=sha256:9128cfe26aee0c99f4fc68c15c6b8b12309a68be0de2c012cdfea2a463cb722f https://github.com/nodejs/corepack/releases/download/v0.36.0/corepack.tgz /tmp/corepack.tgz
 RUN mkdir -p /opt/corepack \
@@ -78,14 +85,15 @@ RUN node /opt/link-tool-modules.mjs /opt/tooling-modules /opt/tools
 FROM repository-tools AS quality
 CMD ["bash", ".config/check.sh"]
 
-FROM python:3.12-alpine3.24@sha256:e064671ca452259bab50e8e2c7bd896e39e9a343bb06ca25234adf6fe18d0fc7 AS render-dependencies
+FROM python-base AS render-dependencies
 COPY --from=uv /uv /usr/local/bin/uv
 COPY .config/render/pyproject.toml .config/render/uv.lock /opt/render/
 RUN uv sync --project /opt/render --locked --no-dev --no-install-project
 
-FROM python:3.12-alpine3.24@sha256:e064671ca452259bab50e8e2c7bd896e39e9a343bb06ca25234adf6fe18d0fc7 AS render
+FROM python-base AS render
 RUN apk add --no-cache bash=5.3.9-r1 readline=8.3.3-r1 libncursesw=6.6_p20260516-r0 ncurses-terminfo-base=6.6_p20260516-r0
 COPY --from=render-dependencies /opt/render/.venv /opt/render/.venv
+RUN /usr/local/bin/python -m pip uninstall --yes pip
 ENV PATH="/opt/render/.venv/bin:${PATH}"
 WORKDIR /workspace
 ENV PYTHONDONTWRITEBYTECODE=1

@@ -145,6 +145,7 @@
         "ADD --checksum=sha256:(?<currentDigest>[a-f0-9]{64}) https://github\\.com/nodejs/corepack/releases/download/(?<currentValue>v[0-9.]+)/corepack\\.tgz"
       ],
       "depNameTemplate": "nodejs/corepack",
+      "packageNameTemplate": "nodejs/corepack",
       "datasourceTemplate": "github-release-attachments"
     }
   ]
