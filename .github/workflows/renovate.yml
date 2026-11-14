@@ -34,3 +34,4 @@ jobs:
           RENOVATE_REQUIRE_CONFIG: required
           RENOVATE_PLATFORM_COMMIT: enabled
           RENOVATE_ALLOW_SCRIPTS: 'false'
+          RENOVATE_USE_CLOUD_METADATA_SERVICES: 'false'
