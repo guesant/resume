@@ -2,4 +2,4 @@
 name = "resume-render"
 version = "1.0.0"
 requires-python = ">=3.12,<3.13"
-dependencies = ["dnspython==2.9.0", "rendercv[full]==2.8"]
+dependencies = ["dnspython==2.9.2", "rendercv[full]==2.8"]
