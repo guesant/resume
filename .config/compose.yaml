@@ -81,6 +81,7 @@ services:
       - RENOVATE_REQUIRE_CONFIG
       - RENOVATE_PLATFORM_COMMIT
       - RENOVATE_ALLOW_SCRIPTS
+      - RENOVATE_USE_CLOUD_METADATA_SERVICES
   scorecard:
     platform: linux/amd64
     build:
