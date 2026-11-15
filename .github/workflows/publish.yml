@@ -20,6 +20,7 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: read
+      pages: read
       security-events: write
     steps:
       - name: Checkout
@@ -72,6 +73,19 @@ jobs:
           include-hidden-files: true
           if-no-files-found: ignore
 
+      - name: Build and validate in Docker
+        run: |
+          docker compose -f .config/compose.yaml run --rm --pull never \
+            --user "$(id -u):$(id -g)" render
+      - name: Configure Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+        with:
+          path: site
+
   sbom:
     needs: quality
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
@@ -106,30 +120,10 @@ jobs:
           include-hidden-files: true
           if-no-files-found: ignore
 
-  build:
-    needs: quality
-    runs-on: ubuntu-24.04
-    timeout-minutes: 15
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          persist-credentials: false
-      - name: Build and validate in Docker
-        run: docker compose -f .config/compose.yaml run --build --rm --user "$(id -u):$(id -g)" render
-      - name: Configure Pages
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
-      - name: Upload Pages artifact
-        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
-        with:
-          path: site
-
   deploy:
     timeout-minutes: 12
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: build
+    needs: quality
     runs-on: ubuntu-24.04
     permissions:
       contents: read
